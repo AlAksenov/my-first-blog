@@ -1,0 +1,78 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+
+{% block content %}
+
+<h3 class="it1">Итерация 1/7</h3>
+
+<div class="itdes">Первая задача современной экономической науки состоит в том, чтобы описать, проанализировать и объяснить динамику производства, безработицы, цен и других подобных явлений, а также установить соотношения между ними. Для того чтобы такое описание имело какую-либо ценность, оно должно представлять собой нечто большее, чем ряд бессвязных перечислений. Оно должно быть подчинено определенной системе; именно под этим понимается подлинный анализ.
+Сложность поведения людей и изменений в социальной жизни не позволяет надеяться на достижение той степени точности, какая присуща исследованиям в области ряда естественных наук. Мы не можем осуществлять контролируемые эксперименты подобно тому, как это делает химик или биолог. Как и астрономы мы должны довольствоваться главным образом «наблюдением». Но наблюдаемые экономические события и статистические данные, увы, не так четки и упорядочении, как орбиты небесных спутников. К счастью, однако, точность наших ответов не обязательно должна достигать нескольких десятичных знаков, напротив, мы сделаем гигантский шаг вперед даже в том случае, если сможем правильно определить общее направление данного явления и достигаемый эффект.
+</div>
+
+<h3 class="perv">Первоначальные данные<h3>
+    <h3 class="vtor">Данные перерасчета<h3>
+
+
+
+    <div  class="pl" id="placeholder1">
+    </div>
+
+    <script type="text/javascript">
+ $.getJSON("{%static 'json/json_files/json1_W23FvQq.txt' %}", function(data) {
+        var output="<ul>";
+        for (var i in data.nodes) {
+            output+="<li>" + data.nodes[i].node + "&nbsp;&nbsp;&nbsp;&nbsp;" + data.nodes[i].value+"</li>";
+
+        }
+
+        output+="</ul>";
+        document.getElementById("placeholder1").innerHTML=output;
+  });
+
+
+    </script>
+
+    <div  class="pl" id="placeholder"></div>
+    <script type="text/javascript">
+ $.getJSON("{%static 'json/json_files/k_map.txt' %}", function(data) {
+        var output="<ul>";
+        for (var i in data.nodes) {
+            output+="<li>" + data.nodes[i].node + "&nbsp;&nbsp;&nbsp;&nbsp;" + data.nodes[i].value+"</li>";
+
+        }
+
+        output+="</ul>";
+        document.getElementById("placeholder").innerHTML=output;
+  });
+
+
+    </script>
+
+
+
+
+ <h3 class="vibor"> Выбор действия</h3>
+<div class="resh">
+
+</div>
+
+
+
+
+<div class="itit">
+    <ul class="nav reshenia">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'kogni:test1' %}">Реакция 1</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'kogni:test2' %}">Реакций 2</span></a>
+      </li>
+      <li class="nav-item active">
+          <a class="nav-link" href="#">Чечня очень круто</span></a>
+      </li>
+    </ul>
+</div>
+
+{% endblock %}

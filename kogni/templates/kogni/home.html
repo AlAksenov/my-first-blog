@@ -1,0 +1,51 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<!--
+<div class="container">
+    <h1>{{title}}</h1>
+</div>
+
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <div class="me">меню</div>
+
+    <div class="otch">ОТЧЕТ ТРОЛОЛОЛОЛОЛО </div>
+
+    <div class="container dannie_body">
+    <ul >
+    {% for cart_item in karti %}
+    <li>
+        <h2><a href="{%url 'kogni:detail' cart_item.id %}" >{{ cart_item.title }}</a></h2>
+    </li>
+    <div>
+        {{ cart_item.description|truncatechars:150 }}
+
+    </div>
+
+    {% endfor %}
+    </ul>
+
+ <div class="pagination">
+    <span class="step-links">
+        {% if karti.has_previous %}
+            <a href="?page={{ karti.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ karti.number }} of {{ karti.paginator.num_pages }}.
+        </span>
+
+        {% if karti.has_next %}
+            <a href="?page={{ karti.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+</div>
+    </div>
+
+
+
+  </body>
+
+{% endblock %}

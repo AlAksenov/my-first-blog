@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "duration": 0,
+      "node": "—редн€€ ставка по кредитам",
+      "order": null,
+      "value": 12
+    }
+  ]
+}

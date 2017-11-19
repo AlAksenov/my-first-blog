@@ -1,0 +1,67 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+
+<nav class="navbar navbar-expand-lg navbar-light menu1">
+
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav vib">
+      <li class="nav-item active">
+        <a class="nav-link test" href="#">Описание карты </span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link test1" href="#">Данные предприятия</span></a>
+      </li>
+      <li class="nav-item active">
+          <a class="nav-link test2" href="#">Выбор сценария</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container dannie_body">
+<h2>{{ karti_item.title}}</h2>
+    <div> {{ karti_item.description }} </div><br><br>
+<div>
+    <a class="btn btn-primary" href="{% url 'kogni:home' %}">&larr; Назад </a>
+</div>
+    </div>
+
+
+
+
+<div class="me" >
+<!--
+    <img src="{{ karti_item.image.url}}" width="300" height="200" />
+    <iframe src="{{ karti_item.file.url}}" width="1200" height="550">...</iframe>
+-->
+    <div  id="placeholder"></div>
+    <script type="text/javascript">
+
+ $.getJSON('{{ karti_item.file.url}}', function(data) {
+        var output="<ul>";
+        for (var i in data.nodes) {
+            output+="<li>" + data.nodes[i].node + " " + data.nodes[i].value+"</li>";
+        }
+
+        output+="</ul>";
+        document.getElementById("placeholder").innerHTML=output;
+  });
+    </script>
+
+       <a class="perehod"  href="#">Выбрать карту</a>
+
+</div>
+<div class="otch">
+    <a href="{% url 'kogni:test' %}">Cценарий 1 </a>
+</div>
+
+
+
+{% endblock %}

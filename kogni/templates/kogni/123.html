@@ -1,0 +1,1197 @@
+<div class="container-fluid">
+      <div class="row">
+        <article itemscope="" itemtype="http://schema.org/Article" class="col-md-8 article">
+          <meta itemscope="" itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="lessons/bootstrap-3/37-bootstrap-3-navigation-panel">
+          <ol itemscope="" itemtype="http://schema.org/BreadcrumbList" id="breadcrumb"><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"><i class="icon icon-home"></i><span itemprop="name" class="sr-only">Главная</span></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="lessons/"><span itemprop="name">Разделы</span></a><meta itemprop="position" content="2"></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="lessons/bootstrap-3/"><span itemprop="name">Bootstrap</span></a><meta itemprop="position" content="3"></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="current hidden-xs"><a itemprop="item" href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel"><span itemprop="name">Bootstrap 3 - Навигационные панели (navs)</span></a><meta itemprop="position" content="4"></li></ol>
+          <h1 itemprop="headline" class="header">Bootstrap 3 - Навигационные панели (navs)</h1>
+          <p class="autor">Автор: Александр Мальцев </p>
+          <!-- Yandex.RTB R-A-161442-1 -->
+<div class="as-aside text-center">
+  <div id="yandex_ad_h" style="display: inline-block;"><yatag class="hrgihaung ksjzrjliz" id="hrgihaung"><yatag class="cwdyhrzq hxcwkhap mzpcjrarul"><yatag class="jnrcnxwbjc"></yatag><yatag class="mupaktlywk aormtqw"><table class="jsjpvpvhkq mnnxfhe lzyartza"><tbody><tr class="ctnteibvx kujtiofmv jocbit"><td class="kyhajcocz iqihold cxhdobr mzswfvsh"><yatag class="bvttzjjb knprtc lqtlgu dxdpji mvylmqbh bskhhqddb" data-id="4890968254" data-uniq-id="1508003212665"><yatag class="izokhtq"><yatag class="htjkhu mnnqlv"><a class="eoviojdnl gruflem" href="https://an.yandex.ru/count/8GK0oWGIXVC40000ZhVO99u5XP9g9vK1cm5kGxS2YB2gY_02YRJijM87cAAdlBwU0vsaQPeMklYFxkiQcfXC2wOkYhuBP3WItBu6d-OHlR07KFSAgW6bhPTn4BoYp48GtG7Ua2JqaRscAba9bz800000M0IFkbjMbmMVkvgmSWoJXGsPFaACfoC_0RQVubkrczvDeAgn_W6lfoC_0REMre6qczvDsQgn_W7QbjQ1b9_72wU53QYxKcWn0gJ000004m6kzyT2ay-nWK85iBM2eGC6iG6oobiG0a08-VV7GfFFiO521VmB_QAdlBwvf6cQ5hlq4AAqgYbHd0B1__________yFmlQiqrqtUiMe0yG1nOyFpRqBP3WIphbvHEKHqm7k0Tly8IUOCSksUm7VXGtme0106Ee3vP3oA-s3AF6JYYRrs15w97V70lRJNH-uLRXLzv0O5VYWe4u2-wn9CW5zAW00?test-tag=76417333200897&amp;stat-id=3&amp;" target="_blank" style="width: auto !important; height: 170px !important;"><yatag class="bsgqxvcm myzeosmkwu"><yatag class="bslporsngf" style="background-image: url(&quot;//avatars.mds.yandex.net/get-direct/205005/PoUWL4TA5mUL43yHPXvwBQ/wx600&quot;) !important;"></yatag><yatag class="fsyocoxye czjxims arlydpek kzudgqz" style="margin-top: 0px !important; margin-bottom: 0px !important; width: 100% !important; height: 170px !important;"><yatag class="ftscdihc" style="width: 303px !important; height: 170px !important; margin-left: -151.5px !important;"><img class="fueocdqrlf" alt="" src="//avatars.mds.yandex.net/get-direct/205005/PoUWL4TA5mUL43yHPXvwBQ/wx600" style="width: 303px !important; height: 170px !important; max-width: 303px !important;"></yatag></yatag></yatag></a></yatag><yatag class="jsiovcuik"><yatag class="czmhyvkded"><yatag class="mzfutiflt knzklcqd atdquy"><a class="fycqynyldt hyzhub" href="https://an.yandex.ru/count/8GK0oWGIXVC40000ZhVO99u5XP9g9vK1cm5kGxS2YB2gY_02YRJijM87cAAdlBwU0vsaQPeMklYFxkiQcfXC2wOkYhuBP3WItBu6d-OHlR07KFSAgW6bhPTn4BoYp48GtG7Ua2JqaRscAba9bz800000M0IFkbjMbmMVkvgmSWoJXGsPFaACfoC_0RQVubkrczvDeAgn_W6lfoC_0REMre6qczvDsQgn_W7QbjQ1b9_72wU53QYxKcWn0gJ000004m6kzyT2ay-nWK85iBM2eGC6iG6oobiG0a08-VV7GfFFiO521VmB_QAdlBwvf6cQ5hlq4AAqgYbHd0B1__________yFmlQiqrqtUiMe0yG1nOyFpRqBP3WIphbvHEKHqm7k0Tly8IUOCSksUm7VXGtme0106Ee3vP3oA-s3AF6JYYRrs15w97V70lRJNH-uLRXLzv0O5VYWe4u2-wn9CW5zAW00?test-tag=76416259459073&amp;stat-id=3&amp;" target="_blank"><yatag class="atdquy jzhakfdwlt">Двери <b>алюми­ниевые</b>, <b>Витражи</b>, Зим.сады</yatag></a></yatag>&nbsp;</yatag><yatag class="fubgmoyznm fohbvvgaz"><yatag class="axlarlc"><yatag class="hqskll"><yatag class="ltvchpmk euwxvccgwj" style="opacity: 1"><yatag class="hwldxiuj"><yatag class="hrzczbuej dnyrrbh"><a class="jzewatbz hyzhub" href="https://an.yandex.ru/count/8GK0oWGIXVC40000ZhVO99u5XP9g9vK1cm5kGxS2YB2gY_02YRJijM87cAAdlBwU0vsaQPeMklYFxkiQcfXC2wOkYhuBP3WItBu6d-OHlR07KFSAgW6bhPTn4BoYp48GtG7Ua2JqaRscAba9bz800000M0IFkbjMbmMVkvgmSWoJXGsPFaACfoC_0RQVubkrczvDeAgn_W6lfoC_0REMre6qczvDsQgn_W7QbjQ1b9_72wU53QYxKcWn0gJ000004m6kzyT2ay-nWK85iBM2eGC6iG6oobiG0a08-VV7GfFFiO521VmB_QAdlBwvf6cQ5hlq4AAqgYbHd0B1__________yFmlQiqrqtUiMe0yG1nOyFpRqBP3WIphbvHEKHqm7k0Tly8IUOCSksUm7VXGtme0106Ee3vP3oA-s3AF6JYYRrs15w97V70lRJNH-uLRXLzv0O5VYWe4u2-wn9CW5zAW00?test-tag=76416259459073&amp;stat-id=3&amp;" target="_blank">anmaks-group.ru<yatag class="lprvirka">/Алюм-двериВитражи</yatag></a></yatag></yatag></yatag></yatag><yatag class="ltvchpmk huicox"><yatag class="hrzczbuej dnyrrbh"><a class="jzewatbz hyzhub" href="https://an.yandex.ru/count/8GK0oWGIXVC40000ZhVO99u5XP9g9vK1cm5kGxS2YB2gY_02YRJijM87cAAdlBwU0vsaQPeMklYFxkiQcfXC2wOkYhuBP3WItBu6d-OHlR07KFSAgW6bhPTn4BoYp48GtG7Ua2JqaRscAba9bz800000M0IFkbjMbmMVkvgmSWoJXGsPFaACfoC_0RQVubkrczvDeAgn_W6lfoC_0REMre6qczvDsQgn_W7QbjQ1b9_72wU53QYxKcWn0gJ000004m6kzyT2ay-nWK85iBM2eGC6iG6oobiG0a08-VV7GfFFiO521VmB_QAdlBwvf6cQ5hlq4AAqgYbHd0B1__________yFmlQiqrqtUiMe0yG1nOyFpRqBP3WIphbvHEKHqm7k0Tly8IUOCSksUm7VXGtme0106Ee3vP3oA-s3AF6JYYRrs15w97V70lRJNH-uLRXLzv0O5VYWe4u2-wn9CW5zAW00?test-tag=76416259459073&amp;stat-id=3&amp;" target="_blank">anmaks-group.ru<yatag class="lprvirka">/Алюм-двериВитражи</yatag></a></yatag></yatag></yatag></yatag><yatag class="iwdtwcivr bqdbeigeoo">Собственное произ­водство. Короткие сроки. Опыт работы более 10 лет.</yatag><yatag class="mocdyi brvfpfojjh"><yatag class="dwdjgu kwlnlkbvrv"><a class="frwyteeky hyzhub" target="_blank" href="https://an.yandex.ru/count/8GK0oWzMn3O40000ZhVO99u5XP9g9vK1cm5kGxS2YB2gY_02YRJijM87cAAdlBwU0vsaQPeMklYFxkiQcfXC2wOkYhuBP3WItBu6d-OHlR07KFSAgX-bhPTn4BoYp48GtG7Ua2JqaRscAba9bz800000M0IFkbjMbmMVkvgmSWoJXGsPFaACfoC_0RQVubkrczvDeAgn_W6lfoC_0REMre6qczvDsQgn_W7QbjQ1b9_72wU53QYxKcWn0gJ000004m6kzyT2ay-nWK85iBM2eGC6iG6oobiG0a08-VV7GfFFiO521VmB_QAdlBwvf6cQ5hlq4AAqgYbHd0B1__________yFmlQiqrqtUiMe0yG1nOyFpRqBP3WIphbvHEKHqm7k0Tly8IUOCSksUm7VXGtme0106Ee3vP3oA-s3AF6JYYRrs15w97V70lRJNH-uLRXLzv0O5VYWe4u2-wn9CW5zAW00?test-tag=76416259459073&amp;stat-id=3&amp;">Отливы</a></yatag><yatag class="dwdjgu cslnmjlf"><a class="frwyteeky hyzhub" target="_blank" href="https://an.yandex.ru/count/8GK0oefUISy40000ZhVO99u5XP9g9vK1cm5kGxS2YB2gY_02YRJijM87cAAdlBwU0vsaQPeMklYFxkiQcfXC2wOkYhuBP3WItBu6d-OHlR07KFSAgY6bhPTn4BoYp48GtG7Ua2JqaRscAba9bz800000M0IFkbjMbmMVkvgmSWoJXGsPFaACfoC_0RQVubkrczvDeAgn_W6lfoC_0REMre6qczvDsQgn_W7QbjQ1b9_72wU53QYxKcWn0gJ000004m6kzyT2ay-nWK85iBM2eGC6iG6oobiG0a08-VV7GfFFiO521VmB_QAdlBwvf6cQ5hlq4AAqgYbHd0B1__________yFmlQiqrqtUiMe0yG1nOyFpRqBP3WIphbvHEKHqm7k0Tly8IUOCSksUm7VXGtme0106Ee3vP3oA-s3AF6JYYRrs15w97V70lRJNH-uLRXLzv0O5VYWe4u2-wn9CW5zAW00?test-tag=76416259459073&amp;stat-id=3&amp;">Алюминиевые двери</a></yatag><yatag class="dwdjgu mzbdfkih"><a class="frwyteeky hyzhub" target="_blank" href="https://an.yandex.ru/count/8GK0oXdUHxm40000ZhVO99u5XP9g9vK1cm5kGxS2YB2gY_02YRJijM87cAAdlBwU0vsaQPeMklYFxkiQcfXC2wOkYhuBP3WItBu6d-OHlR07KFSAgYEbhPTn4BoYp48GtG7Ua2JqaRscAba9bz800000M0IFkbjMbmMVkvgmSWoJXGsPFaACfoC_0RQVubkrczvDeAgn_W6lfoC_0REMre6qczvDsQgn_W7QbjQ1b9_72wU53QYxKcWn0gJ000004m6kzyT2ay-nWK85iBM2eGC6iG6oobiG0a08-VV7GfFFiO521VmB_QAdlBwvf6cQ5hlq4AAqgYbHd0B1__________yFmlQiqrqtUiMe0yG1nOyFpRqBP3WIphbvHEKHqm7k0Tly8IUOCSksUm7VXGtme0106Ee3vP3oA-s3AF6JYYRrs15w97V70lRJNH-uLRXLzv0O5VYWe4u2-wn9CW5zAW00?test-tag=76416259459073&amp;stat-id=3&amp;">Витражное остекление</a></yatag><yatag class="dwdjgu lxxsjmabt"><a class="frwyteeky hyzhub" target="_blank" href="https://an.yandex.ru/count/8GK0oZfDTBC40000ZhVO99u5XP9g9vK1cm5kGxS2YB2gY_02YRJijM87cAAdlBwU0vsaQPeMklYFxkiQcfXC2wOkYhuBP3WItBu6d-OHlR07KFSAgYkbhPTn4BoYp48GtG7Ua2JqaRscAba9bz800000M0IFkbjMbmMVkvgmSWoJXGsPFaACfoC_0RQVubkrczvDeAgn_W6lfoC_0REMre6qczvDsQgn_W7QbjQ1b9_72wU53QYxKcWn0gJ000004m6kzyT2ay-nWK85iBM2eGC6iG6oobiG0a08-VV7GfFFiO521VmB_QAdlBwvf6cQ5hlq4AAqgYbHd0B1__________yFmlQiqrqtUiMe0yG1nOyFpRqBP3WIphbvHEKHqm7k0Tly8IUOCSksUm7VXGtme0106Ee3vP3oA-s3AF6JYYRrs15w97V70lRJNH-uLRXLzv0O5VYWe4u2-wn9CW5zAW00?test-tag=76416259459073&amp;stat-id=3&amp;">Остекление лоджий</a></yatag></yatag></yatag></yatag><yatag class="kudbzvhjp evlxsdwbf"><yatag class="lucwglna"><yatag class="myoxzj"><yatag class="mrhxyetjg"><yatag class="lneqypiayv jzjlqcbrr"><yatag class="eozpvcun">Скрыть рекламу:</yatag><yatag class="bnfcdf"><a class="brtxiqj" data-option-id="3-2">Не интересуюсь этой темой / Уже купил</a></yatag><yatag class="bnfcdf"><a class="brtxiqj" data-option-id="1-3">Навязчивое и надоело</a></yatag><yatag class="bnfcdf"><a class="brtxiqj" data-option-id="5-3">Сомнительного содержания или спам</a></yatag><yatag class="bnfcdf"><a class="brtxiqj" data-option-id="9-0">Мешает просмотру контента</a></yatag></yatag></yatag></yatag><yatag class="mprhef"><yatag class="atdxhjpop lxriwdib"><table class="awbqyf"><tbody><tr><td class="mzeumji"><yatag class="fxsmepfklx"><svg width="18" height="18"><path d="M5.485 11.07L2.45 8.037 1.036 9.45l3.035 3.035-.034.036 1.414 1.415 8.485-8.485-1.414-1.414-7.035 7.035z" fill="#000" fill-rule="evenodd"></path></svg></yatag>Спасибо, объявление скрыто.</td></tr></tbody></table></yatag></yatag></yatag></yatag><yatag class="fsuakbqhh awykwcb dppbbkqvn kymtrmsggv"><yatag class="czjdbvb"><yatag class="ezwjdlyhtq iztrto mpwxzoggg hyfeadvb"><yatag class="bvmyisq"><yatag class="kscooo" style="width: 8px !important; height: 8px !important;"><svg width="8px" height="8px" viewBox="0 0 14 14" version="1.1"><polygon points="14,0.7 13.3,0 7,6.299 0.7,0 0,0.7 6.3,7 0,13.299 0.7,14 7,7.7 13.3,14 14,13.299 7.7,7"></polygon></svg></yatag><yatag class="hnjebqcifd"><yatag class="fzhvrts"></yatag><yatag class="mrynbbnob">Скрыть&nbsp;объявление</yatag></yatag></yatag></yatag></yatag></yatag></yatag></td></tr></tbody></table></yatag><yatag class="iwyuge atxgee"><a class="gwnggvhhd" href="https://direct.yandex.ru/?partner" target="_blank">Яндекс.Директ</a></yatag></yatag></yatag></div>
+</div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+  if (window.matchMedia("only screen and (max-width: 1239px)").matches) {
+    var m= "R-A-161442-1";
+  } else if (window.matchMedia("only screen and (min-width: 1240px) and (max-width: 1919px)").matches) {
+    var m= "R-A-161442-3";
+  } else {
+    var m= "R-A-161442-4";
+  }
+  w[n] = w[n] || [];
+  w[n].push(function() {
+    Ya.Context.AdvManager.render({
+      blockId: m,
+      renderTo: "yandex_ad_h",
+      async: true
+    });
+  });
+  t = d.getElementsByTagName("script")[0];
+  s = d.createElement("script");
+  s.type = "text/javascript";
+  s.src = "//an.yandex.ru/system/context.js";
+  s.async = true;
+  t.parentNode.insertBefore(s, t);
+})(this, this.document, "yandexContextAsyncCallbacks");
+</script>
+          <div itemprop="articleBody" class="main-content"><p class="text-justify"><em>В этой статье научимся создавать навигационные панели с помощью классов Twitter Bootstrap.</em></p>
+
+<h2 class="h3 page-header">Основы создания навигационных панелей (navs)</h2>
+<p class="text-justify">Навигационные панели (navs) в Twitter Bootstrap реализованы в виде вкладок (tabs) и кнопок (pills). Создание навигационной панели  начинается с создания маркированного списка (<code>&lt;ul&gt;&lt;/ul&gt;</code>) к которому добавляется базовый класс <code>.nav</code>. После этого переходят к созданию пунктов (<code>&lt;li&gt;&lt;/li&gt;</code>), которые будут являться вкладками (tabs) или кнопками (pills).</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"navs"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li&gt;</span><span class="pln">Главная</span><span class="tag">&lt;/li&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;li&gt;</span><span class="pln">Вопросы</span><span class="tag">&lt;/li&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;li&gt;</span><span class="pln">Статьи</span><span class="tag">&lt;/li&gt;</span></li><li class="L4"><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+<h2 class="h3 page-header">Навигационная панель в виде вкладок (tabs)</h2>
+<p class="text-justify">Для того чтобы сделать навигационную панель в виде вкладок необходимо к базовому классу <code>.nav</code> добавить класс <code>.nav-tabs</code>.</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav nav-tabs"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Главная</span><span class="tag">&lt;/a&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;/li&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;li&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Вопросы</span><span class="tag">&lt;/a&gt;</span></li><li class="L6"><span class="pln">  </span><span class="tag">&lt;/li&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;li&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Статьи</span><span class="tag">&lt;/a&gt;</span></li><li class="L9"><span class="pln">  </span><span class="tag">&lt;/li&gt;</span></li><li class="L0"><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+<p>Вышеприведенный код будет выглядеть следующим образом:</p>
+<div class="alert">
+<ul class="nav nav-tabs">
+  <li class="active"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Главная</a></li>
+  <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Вопросы</a></li>
+  <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Статьи</a></li>
+</ul>
+</div>
+
+<h2 class="h3 page-header">Создание вкладок (tabs) с иконками</h2>
+<p class="text-justify">К названию вкладки можно добавить иконку. Для этого необходимо элемент <code>span</code> или <code>i</code>, содержащий иконку, поместить в элемент <code>a</code>:</p>
+
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav nav-tabs"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"glyphicon glyphicon-home"</span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln"> Главная</span><span class="tag">&lt;/a&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;/li&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;li&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"glyphicon glyphicon-pencil"</span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln"> Вопросы</span><span class="tag">&lt;/a&gt;</span></li><li class="L6"><span class="pln">  </span><span class="tag">&lt;/li&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;li&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"glyphicon glyphicon-th-list"</span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln"> Статьи</span><span class="tag">&lt;/a&gt;</span></li><li class="L9"><span class="pln">  </span><span class="tag">&lt;/li&gt;</span></li><li class="L0"><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+
+<p>Вышеприведенный код будет выглядеть следующим образом:</p>
+
+<div class="alert">
+<ul class="nav nav-tabs">
+  <li class="active"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow"><span class="glyphicon glyphicon-home"></span>  Главная</a></li>
+  <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow"><span class="glyphicon glyphicon-pencil"></span> Вопросы</a></li>
+  <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow"><span class="glyphicon glyphicon-th-list"></span> Статьи</a></li>
+</ul>
+</div>
+
+<h2 class="h3 page-header">Навигационная панель в виде кнопок (pills)</h2>
+<p class="text-justify">Для того чтобы сделать навигационную панель в виде кнопок необходимо к базовому классу <code>.nav</code> добавить класс <code>.nav-pills</code>.</p>
+
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav nav-pills"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Главная</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Вопросы</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Статьи</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L4"><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+
+<p>Вышеприведенный код будет выглядеть примерно так:</p>
+
+<div class="alert">
+<ul class="nav nav-pills">
+  <li class="active"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Главная</a></li>
+  <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Вопросы</a></li>
+  <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Статьи</a></li>
+</ul>
+</div>
+
+<h2 class="h3 page-header">Создание кнопок (pills) с иконками</h2>
+<p class="text-justify">К названию кнопки навигационной панели можно добавить иконку. Для этого необходимо элемент <code>span</code> или <code>i</code>, содержащий иконку, поместить в элемент <code>a</code>:</p>
+
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav nav-pills"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"glyphicon glyphicon-home"</span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln">  Главная</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"glyphicon glyphicon-pencil"</span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln"> Вопросы</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"glyphicon glyphicon-th-list"</span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln"> Статьи</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L4"><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+
+<p>Вышеприведенный код будет выглядеть следующим образом:</p>
+
+<div class="alert">
+<ul class="nav nav-pills">
+  <li class="active"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow"><span class="glyphicon glyphicon-home"></span>  Главная</a></li>
+  <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow"><span class="glyphicon glyphicon-pencil"></span> Вопросы</a></li>
+  <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow"><span class="glyphicon glyphicon-th-list"></span> Статьи</a></li>
+</ul>
+</div>
+
+<h2 class="h3 page-header">Навигационная панель с вертикальным расположением кнопок</h2>
+<p class="text-justify">По умолчанию, в навигационной панели pills кнопки расположены горизонтально. Чтобы их расположить вертикально, просто добавьте к классам <code>.nav</code> и <code>.nav-pills</code> дополнительный класс <code>.nav-stacked</code>.</p>
+
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav nav-pills nav-stacked"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Главная</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Вопросы</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Статьи</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L4"><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+
+<p>Вышеприведенный код будет выглядеть следующим образом:</p>
+
+<div class="alert">
+<ul class="nav nav-pills nav-stacked">
+  <li class="active"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Главная</a></li>
+  <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Вопросы</a></li>
+  <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Статьи</a></li>
+</ul>
+</div>
+
+<h2 class="h3 page-header">Создание вкладок (tabs) и кнопок (pills) с выпадающим меню</h2>
+<p class="text-justify">К вкладкам (tabs) и кнопкам (pills) можно добавить выпадающее меню (dropdown) с помощью соответствующей разметки и CSS классов <code>.dropdown</code>, <code>.dropdown-toggle</code>, <code>.dropdown-menu</code> и <code>.caret</code>.</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav nav-tabs"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  ...</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"presentation"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-toggle"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"dropdown"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">aria-haspopup</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln"> </span><span class="atn">aria-expanded</span><span class="pun">=</span><span class="atv">"false"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">      Выпадающее меню </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"caret"</span><span class="tag">&gt;&lt;/span&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;/a&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-menu"</span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">      ...</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;/ul&gt;</span></li><li class="L9"><span class="pln">  </span><span class="tag">&lt;/li&gt;</span></li><li class="L0"><span class="pln">  ...</span></li><li class="L1"><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+<div class="alert alert-info text-justify">Примечание: Выпадающее меню (dropdown) требует наличия подключенного плагина JavaScript dropdown или файла bootstrap.js (bootstrap.min.js).</div>
+
+<p class="text-justify">Например, добавим к одной из вкладок навигационной панели выпадающее меню:</p>
+
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav nav-tabs"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Главная</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Вопросы</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"dropdown"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-toggle"</span><span class="tag">&gt;</span><span class="pln">Статьи </span><span class="tag">&lt;b</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"caret"</span><span class="tag">&gt;&lt;/b&gt;&lt;/a&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-menu"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Windows</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L7"><span class="pln">      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Linux</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L8"><span class="pln">      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Mac OS</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L9"><span class="pln">      </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"divider"</span><span class="tag">&gt;&lt;/li&gt;</span></li><li class="L0"><span class="pln">      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Другие</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;/ul&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;/li&gt;</span></li><li class="L3"><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+<p>Вышеприведенный код будет выглядеть следующим образом:</p>
+
+<div class="alert">
+<ul class="nav nav-tabs">
+  <li class="active"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Главная</a></li>
+  <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Вопросы</a></li>
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle" rel="nofollow">Статьи <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Windows</a></li>
+      <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Linux</a></li>
+      <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Mac OS</a></li>
+      <li class="divider"></li>
+      <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Другие</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<p class="text-justify">Например, добавим к одной из кнопок навигационной панели выпадающее меню:</p>
+
+<pre class="prettyprint"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav nav-pills"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Главная</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Вопросы</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"dropdown"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-toggle"</span><span class="tag">&gt;</span><span class="pln">Статьи </span><span class="tag">&lt;b</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"caret"</span><span class="tag">&gt;&lt;/b&gt;&lt;/a&gt;</span><span class="pln">
+    </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-menu"</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Windows</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Linux</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Mac OS</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+      </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"divider"</span><span class="tag">&gt;&lt;/li&gt;</span><span class="pln">
+      </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Другие</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;/ul&gt;</span></pre>
+
+<p>Вышеприведенный код будет выглядеть следующим образом:</p>
+
+<div class="alert">
+<ul class="nav nav-pills">
+  <li class="active"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Главная</a></li>
+  <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Вопросы</a></li>
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle" rel="nofollow">Статьи <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Windows</a></li>
+      <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Linux</a></li>
+      <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Mac OS</a></li>
+      <li class="divider"></li>
+      <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Другие</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<h2 class="h3 page-header">Навигационная панель с вкладками или кнопками, выровненными по ширине</h2>
+<p class="text-justify">Twitter Bootstrap 3 позволяет настроить навигационную панель таким образом, чтобы она занимала всю ширину родительского элемента. Вкладки или кнопки, расположенные в этой навигационной панели становятся адаптивными и в зависимости от типа текущего устройства располагаются одним из  следующих способов:</p>
+<ul class="text-justify">
+<li>на устройствах <code>sm</code>, <code>md</code> и <code>lg</code> (ширина &gt;=768px) вкладки (кнопки) в навигационной панели располагаются горизонтально и имеют одинаковую ширину, равную ширине родительского элемента / количество вкладок (кнопок).</li>
+<li>на очень маленьких устройствах <code>xs</code> (ширина &lt; 768px) вкладки (кнопки) в навигационной панели располагаются вертикально и имеют ширину, равную ширине родительского элемента.</li>
+</ul>
+<p class="text-justify">Создание навигационной панели с вкладками или кнопками,  выровненными по ширине, осуществляется посредством добавления класса <code>.nav-justified</code> к классу <code>.nav</code>.</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav nav-pills nav-justified"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Главная</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Вопросы</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Статьи</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L4"><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+<p><img itemprope="image" class="center-block img-thumbnail" src="assets/images/tickets/2015.06/bootstrap-nav-justified.png" alt="Bootstrap - панель nav с вкладками или кнопками, выровненными по ширине" title="Bootstrap - панель nav с вкладками или кнопками, выровненными по ширине"></p>
+
+<h2 class="h3 page-header">Перевод ссылки в не активное состояние</h2>
+<p class="text-justify">Ссылку, размещенную во вкладки или кнопки навигационной панели можно перевести в неактивное состояние. Для этого необходимо добавить класс <code>.disabled</code> к соответствующему элементу <code>li</code>.</p>
+
+<pre class="prettyprint"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav nav-pills"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Главная</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"disabled"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Вопросы</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Статьи</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;/ul&gt;</span></pre>
+
+<p>Вышеприведенный код будет выглядеть следующим образом:</p>
+
+<div class="alert">
+<ul class="nav nav-pills">
+  <li class="active"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Главная</a></li>
+  <li class="disabled"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Вопросы</a></li>
+  <li><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#sample" rel="nofollow">Статьи</a></li>
+</ul>
+</div>
+
+<div class="alert alert-info text-justify">Примечание: Класс <code>.disabled</code> изменяет цвет ссылки и удаляет эффект при наведении на неё. Однако ссылка остаётся рабочей, изменить ситуацию можно, например, с помощью создания дополнительного JavaScript кода, удаляющего атрибут href.</div>
+
+<h2 class="h3 page-header">Переключение вкладок навигационного меню</h2>
+
+<pre class="prettyprint linenums pre-scrollable"><ol class="linenums"><li class="L0"><span class="com">&lt;!-- Навигационная панель с 3 вкладками --&gt;</span><span class="pln"> </span></li><li class="L1"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav nav-tabs"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"tablist"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"myTabExample"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#homeExample"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"tab"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"tab"</span><span class="tag">&gt;</span><span class="pln">Главная</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#questionsExample"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"tab"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"tab"</span><span class="tag">&gt;</span><span class="pln">Вопросы</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#articlesExample"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"tab"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"tab"</span><span class="tag">&gt;</span><span class="pln">Статьи</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L5"><span class="tag">&lt;/ul&gt;</span></li><li class="L6"><span class="pln">&nbsp;</span></li><li class="L7"><span class="com">&lt;!-- Содержимое вкладок --&gt;</span></li><li class="L8"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tab-content"</span><span class="tag">&gt;</span></li><li class="L9"><span class="pln">  </span><span class="com">&lt;!-- Содержимое 1 вкладки --&gt;</span></li><li class="L0"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tab-pane active"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"homeExample"</span><span class="tag">&gt;</span><span class="pln"> </span></li><li class="L1"><span class="pln">    Содержание вкладки "Главная"</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">  </span><span class="com">&lt;!-- Содержимое 2 вкладки --&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tab-pane active"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"questionsExample"</span><span class="tag">&gt;</span><span class="pln"> </span></li><li class="L5"><span class="pln">    Содержание вкладки "Вопросы"</span></li><li class="L6"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L7"><span class="pln">  </span><span class="com">&lt;!-- Содержимое 3 вкладки --&gt;</span></li><li class="L8"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tab-pane active"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"articlesExample"</span><span class="tag">&gt;</span><span class="pln"> </span></li><li class="L9"><span class="pln">    Содержание вкладки "Статьи"</span></li><li class="L0"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L1"><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="com">&lt;!-- Скрипт для активирования работы вкладок --&gt;</span></li><li class="L4"><span class="tag">&lt;script&gt;</span></li><li class="L5"><span class="pln">$</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L6"><span class="pln">  $</span><span class="pun">(</span><span class="str">'#myTabExample a:last'</span><span class="pun">).</span><span class="pln">tab</span><span class="pun">(</span><span class="str">'show'</span><span class="pun">)</span></li><li class="L7"><span class="pun">});</span></li><li class="L8"><span class="tag">&lt;/script&gt;</span></li></ol></pre>
+
+<p>Вышеприведенный код будет выглядеть следующим образом:</p>
+
+<!-- Навигационная панель с 3 вкладками -->
+<div class="alert">
+<ul class="nav nav-tabs" role="tablist" id="myTabExample">
+  <li class=""><a href="#homeExample" role="tab" data-toggle="tab" rel="nofollow" aria-expanded="false">Главная</a></li>
+  <li><a href="#questionsExample" role="tab" data-toggle="tab" rel="nofollow">Вопросы</a></li>
+  <li class="active"><a href="#articlesExample" role="tab" data-toggle="tab" rel="nofollow" aria-expanded="true">Статьи</a></li>
+</ul>
+
+<!-- Содержимое вкладок -->
+<div class="tab-content">
+  <!-- Содержимое 1 вкладки -->
+  <div class="tab-pane" id="homeExample">
+    <br>
+    <p>Содержание вкладки "Главная"...</p>
+    <br>
+  </div>
+  <!-- Содержимое 2 вкладки -->
+  <div class="tab-pane" id="questionsExample">
+    <br>
+    <p>Содержание вкладки "Вопросы"...</p>
+    <br>
+  </div>
+  <!-- Содержимое 3 вкладки -->
+  <div class="tab-pane active" id="articlesExample">
+    <br>
+    <p>Содержание вкладки "Статьи"...</p>
+    <br>
+  </div>
+</div>
+
+<!-- Скрипт для активирования работы вкладок -->
+<script>
+  $(function() {
+    $('#myTabExample a:last').tab('show')
+  })
+</script>
+
+</div></div>
+          <div class="row text-center" style="margin-bottom: 15px;">
+<ins class="adsbygoogle adslot1l" data-ad-client="ca-pub-5588980879362570" data-ad-slot="6130465844" data-adsbygoogle-status="done" style="width: 336px; height: 280px;"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><iframe width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:336px;height:280px;"></iframe></ins></ins></ins>
+<ins class="adsbygoogle adslot1r" data-ad-client="ca-pub-5588980879362570" data-ad-slot="7204314642" data-adsbygoogle-status="done" style="width: 336px; height: 280px;"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><iframe width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:336px;height:280px;"></iframe></ins></ins></ins>
+</div>
+          <hr>
+          <script src="//yastatic.net/share2/share.js" async="async"></script>
+<div class="ya-share2-container">
+  <p>Если статья понравилась, то поделитесь ей в социальных сетях:</p>
+  <div class="ya-share2 ya-share2_inited" data-services="collections,vkontakte,facebook,gplus,twitter" data-counter=""><div class="ya-share2__container ya-share2__container_size_m"><ul class="ya-share2__list ya-share2__list_direction_horizontal"><li class="ya-share2__item ya-share2__item_service_collections"><a class="ya-share2__link" href="https://yandex.ru/collections/share/?url=https%3A%2F%2Fitchief.ru%2Flessons%2Fbootstrap-3%2F37-bootstrap-3-navigation-panel&amp;image=&amp;description=Bootstrap%203%20-%20%D0%9D%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D0%B8%20(navs)%20%7C%20%D0%98%D0%A2%20%D0%A8%D0%B5%D1%84&amp;utm_source=share2" rel="nofollow noopener" target="_blank" title="Яндекс.Коллекции"><span class="ya-share2__badge"><span class="ya-share2__icon"></span></span><span class="ya-share2__title">Яндекс.Коллекции</span></a></li><li class="ya-share2__item ya-share2__item_service_vkontakte"><a class="ya-share2__link" href="https://vk.com/share.php?url=https%3A%2F%2Fitchief.ru%2Flessons%2Fbootstrap-3%2F37-bootstrap-3-navigation-panel&amp;title=Bootstrap%203%20-%20%D0%9D%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D0%B8%20(navs)%20%7C%20%D0%98%D0%A2%20%D0%A8%D0%B5%D1%84&amp;description=&amp;image=&amp;utm_source=share2" rel="nofollow noopener" target="_blank" title="ВКонтакте"><span class="ya-share2__badge"><span class="ya-share2__icon"></span><span class="ya-share2__counter"></span></span><span class="ya-share2__title">ВКонтакте</span></a></li><li class="ya-share2__item ya-share2__item_service_facebook"><a class="ya-share2__link" href="https://www.facebook.com/sharer.php?src=sp&amp;u=https%3A%2F%2Fitchief.ru%2Flessons%2Fbootstrap-3%2F37-bootstrap-3-navigation-panel&amp;title=Bootstrap%203%20-%20%D0%9D%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D0%B8%20(navs)%20%7C%20%D0%98%D0%A2%20%D0%A8%D0%B5%D1%84&amp;description=&amp;picture=&amp;utm_source=share2" rel="nofollow noopener" target="_blank" title="Facebook"><span class="ya-share2__badge"><span class="ya-share2__icon"></span><span class="ya-share2__counter"></span></span><span class="ya-share2__title">Facebook</span></a></li><li class="ya-share2__item ya-share2__item_service_gplus"><a class="ya-share2__link" href="https://plus.google.com/share?url=https%3A%2F%2Fitchief.ru%2Flessons%2Fbootstrap-3%2F37-bootstrap-3-navigation-panel&amp;utm_source=share2" rel="nofollow noopener" target="_blank" title="Google+"><span class="ya-share2__badge"><span class="ya-share2__icon"></span><span class="ya-share2__counter"></span></span><span class="ya-share2__title">Google+</span></a></li><li class="ya-share2__item ya-share2__item_service_twitter"><a class="ya-share2__link" href="https://twitter.com/intent/tweet?text=Bootstrap%203%20-%20%D0%9D%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D0%B8%20(navs)%20%7C%20%D0%98%D0%A2%20%D0%A8%D0%B5%D1%84&amp;url=https%3A%2F%2Fitchief.ru%2Flessons%2Fbootstrap-3%2F37-bootstrap-3-navigation-panel&amp;hashtags=&amp;utm_source=share2" rel="nofollow noopener" target="_blank" title="Twitter"><span class="ya-share2__badge"><span class="ya-share2__icon"></span></span><span class="ya-share2__title">Twitter</span></a></li></ul><iframe class="ya-share2__iframe" src="https://yastatic.net/share2/v-1.21.1/frame.html?namespace=ya-share2.0.6343663792095096" style="border: 0; display: none; position: absolute; left: -9999px;"></iframe></div></div>
+</div>
+          <div class="ticket-meta row text-center" data-id="37">
+	<div class="hidden"><span itemprop="author" itemscope="" itemtype="http://schema.org/Person"><span itemprop="name">Александр Мальцев</span></span></div>
+	<div class="meta-info published">
+	  <div class="title">
+	    Дата публикации
+	  </div>
+	  <div class="content">
+	    <i class="icon icon-calendar"></i> <time itemprop="datePublished" content="2014-08-30T06:58" datetime="2014-08-30T06:58">30-08-2014</time>
+	  </div>
+  </div>
+	<div class="meta-info">
+	  <div class="title">
+	    Избранное
+	  </div>
+	  <div class="content">
+      <span class="ticket-star"><i class="icon icon-star unstared star"></i> <span class="ticket-star-count">0</span></span>
+	  </div>
+  </div>
+	<div class="meta-info">
+	  <div class="title">
+	    Просмотры
+	  </div>
+	  <div class="content">
+      <i class="icon icon-eye"></i> 31860
+	  </div>
+  </div>
+
+	<div class="meta-info">
+	  <div class="title">
+	    Нравится
+	  </div>
+	  <div class="content">
+    	<span class="ticket-rating inactive">
+    		<span class="vote plus" title="Нравится">
+    			<i class="icon icon-heart"></i>
+    		</span>
+        <span class="rating">0</span>
+  		</span>
+	  </div>
+  </div>
+</div>
+
+          <section class="comments">
+
+	<h3 class="title"><i class="icon icon-bubbles"></i> Комментарии (<span itemprop="commentCount" id="comment-total">21</span>)</h3>
+
+	<!-- Для авторизированных пользователей -->
+
+
+	<div id="comments-wrapper">
+		<ol class="comment-list" id="comments"><li class="ticket-comment" id="comment-3045">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="https://www.gravatar.com/avatar/06f16735cf9216c29d15323441198a17?s=24&amp;d=mm" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Анатолий</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2016-09-30" datetime="2016-09-30">30 сентября 2016, 10:05</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-3045">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      Здравствуйте! Спасибо за Ваш ресурс, очень помогает.<br>
+Подскажите пожалуйста как правильно (с точки зрения bootstrap) в nav сделать элементы меню без стилей pills и tabs, просто ссылки нужного мне цвета, активная выделяется тоже только цветом ссылки.
+    </div>
+  </div>
+  <ol class="comments-list"><li class="ticket-comment" id="comment-3065">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="/assets/images/users/f2409a04b785f39f066901bb9f243868.jpg" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Александр Мальцев</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2016-10-03" datetime="2016-10-03">03 октября 2016, 11:32</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-3065">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      Убрать у элемента<br>
+<pre class="prettyprint"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav nav-tabs"</span><span class="tag">&gt;</span></pre>классы <b>nav nav-tabs</b>.
+    </div>
+  </div>
+  <ol class="comments-list"><li class="ticket-comment" id="comment-3076">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="https://www.gravatar.com/avatar/06f16735cf9216c29d15323441198a17?s=24&amp;d=mm" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Анатолий</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2016-10-04" datetime="2016-10-04">04 октября 2016, 06:53</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-3076">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      Спасибо.
+    </div>
+  </div>
+  <ol class="comments-list"></ol>
+</li></ol>
+</li></ol>
+</li>
+<li class="ticket-comment" id="comment-1980">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="https://www.gravatar.com/avatar/d847112b88b55efb482be776dbca3e07?s=24&amp;d=mm" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Дмитрий</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2016-04-17" datetime="2016-04-17">17 апреля 2016, 09:27</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-1980">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      Добрый день! Подскажите, пожалуйста, как сделать такое меню как у вас блок Навигация??? <br>
+Можно его создать на базе bootstrap c помощью html и css? Если у вас статья такое сделать напишите, пожалуйста.
+    </div>
+  </div>
+  <ol class="comments-list"><li class="ticket-comment" id="comment-3066">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="/assets/images/users/f2409a04b785f39f066901bb9f243868.jpg" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Александр Мальцев</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2016-10-03" datetime="2016-10-03">03 октября 2016, 11:34</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-3066">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      Такое меню называется аккордеон. Как его сдлеать можно посмотреть на этой странице <a href="/lessons/bootstrap-3/bootstrap-3-accordion" rel="nofollow">bootstrap 3 accordion</a>.
+    </div>
+  </div>
+  <ol class="comments-list"></ol>
+</li></ol>
+</li>
+<li class="ticket-comment" id="comment-1461">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="https://www.gravatar.com/avatar/61998218aef993931ef43e9c9918adda?s=24&amp;d=mm" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Денис</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2016-02-13" datetime="2016-02-13">13 февраля 2016, 14:16</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-1461">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      Добрый день, подскажите пожалуйста есть такая задача.<br>
+Есть кнопки <br>
+<pre class="prettyprint"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav nav-pills nav-stacked"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#Характеристики"</span><span class="tag">&gt;</span><span class="pln">Характеристики</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#Описание"</span><span class="tag">&gt;</span><span class="pln">Описание</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#Отзывы"</span><span class="tag">&gt;</span><span class="pln">Отзывы</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;/ul&gt;</span></pre>Как сделать чтобы при нажатии на кнопку описание было действия через якорь поехало вниз где описание так же и туда где отзывы при этом чтобы кнопка была активная если мы переехали к описанию то кнопка описание активна, заранее спасибо
+    </div>
+  </div>
+  <ol class="comments-list"><li class="ticket-comment" id="comment-1469">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="/assets/images/users/f2409a04b785f39f066901bb9f243868.jpg" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Александр Мальцев</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2016-02-14" datetime="2016-02-14">14 февраля 2016, 14:48</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-1469">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      Здравствуйте, не совсем понятно, что Вы написали.<br>
+Наверно хотите, чтобы при нажатию на кнопку, она становилось активной.<br>
+Тогда необходимо добавить на страницу следующий скрипт.<br>
+<pre class="prettyprint"><span class="tag">&lt;script&gt;</span><span class="pln">
+$</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+  $</span><span class="pun">(</span><span class="str">'ul.nav.nav-pills li a'</span><span class="pun">).</span><span class="pln">click</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="com">// удаляем класс .active у всех кнопок</span><span class="pln">
+    $</span><span class="pun">(</span><span class="str">'ul.nav.nav-pills li'</span><span class="pun">).</span><span class="pln">each</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">removeClass</span><span class="pun">(</span><span class="str">'active'</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">});</span><span class="pln">
+    </span><span class="com">//добавляем для нажатой</span><span class="pln">
+    $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">parent</span><span class="pun">().</span><span class="pln">addClass</span><span class="pun">(</span><span class="str">'active'</span><span class="pun">);</span><span class="pln">
+  </span><span class="pun">});</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+</span><span class="tag">&lt;/script&gt;</span></pre>
+    </div>
+  </div>
+  <ol class="comments-list"><li class="ticket-comment" id="comment-1478">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="https://www.gravatar.com/avatar/61998218aef993931ef43e9c9918adda?s=24&amp;d=mm" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Денис</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2016-02-16" datetime="2016-02-16">16 февраля 2016, 10:44</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-1478">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      Да это тоже но еще хотел спросить как сделать якоря <a href="http://getbootstrap.com/css/#overview" rel="nofollow">getbootstrap.com/css/#overview</a> на этом сайте если нажать по меню то оно перепрыгивает по странице, у меня почему то не работает а просто переходит на главную site.ru/#link как с этими кнопками сделать якорь по странице
+    </div>
+  </div>
+  <ol class="comments-list"><li class="ticket-comment" id="comment-3067">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="/assets/images/users/f2409a04b785f39f066901bb9f243868.jpg" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Александр Мальцев</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2016-10-03" datetime="2016-10-03">03 октября 2016, 11:41</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-3067">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      Если Вы формируете адреса на сервере, то вместо <b>#Характеристики</b> сформируйте полные адреса.
+    </div>
+  </div>
+  <ol class="comments-list"></ol>
+</li></ol>
+</li></ol>
+</li></ol>
+</li>
+<li class="ticket-comment" id="comment-1075">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="https://www.gravatar.com/avatar/997fc94b6a3b3a8d577aa704245f7697?s=24&amp;d=mm" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Виталий</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2015-12-28" datetime="2015-12-28">28 декабря 2015, 21:02</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-1075">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      Добрый день!<br>
+Подскажите, как организовать панель, которая была бы прикреплена к верху, на ней две картинки слева и справа, а по центру надпись ? При уменьшении размеров окна ширина и высота тоже бы уменьшались, а надпись если бы не влезала, то отсекалась.
+    </div>
+  </div>
+  <ol class="comments-list"><li class="ticket-comment" id="comment-1077">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="/assets/images/users/f2409a04b785f39f066901bb9f243868.jpg" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Александр Мальцев</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2015-12-29" datetime="2015-12-29">29 декабря 2015, 17:33</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-1077">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      Здравствуйте, Виталий.<br>
+Ваш Вопрос, насколько я понимаю, никакого отношения к компоненту nav не имеет.<br>
+Решить Вашу проблему с помощью Bootstrap можно так:<br>
+<pre class="prettyprint"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"myPanel"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"container-fluid"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-xs-4 col-sm-3 col-md-2"</span><span class="tag">&gt;</span><span class="pln">
+       </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"img-responsive pull-left"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"..."</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-xs-4 col-sm-6 col-md-8 text-center"</span><span class="tag">&gt;</span><span class="pln">
+        Некоторый текст
+      </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-xs-4 col-sm-3 col-md-2"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"img-responsive pull-right"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"..."</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></pre>CSS:<br>
+<pre class="prettyprint"><span class="com">#myPanel {</span><span class="pln">
+  position</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">fixed</span><span class="pun">;</span><span class="pln"> </span><span class="com">/*Положение фиксированное*/</span><span class="pln">
+  width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">%;</span><span class="pln"> </span><span class="com">/*На всю ширину рабочей области браузера*/</span><span class="pln">
+  top</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0px</span><span class="pun">;</span><span class="pln"> </span><span class="com">/*Прикрепляем панель к верху*/</span><span class="pln">
+  left</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0px</span><span class="pun">;</span><span class="pln"> </span><span class="com">/*прикрепляем панель к левому краю*/</span><span class="pln">
+  z</span><span class="pun">-</span><span class="pln">index</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1001</span><span class="pun">;</span><span class="pln"> </span><span class="com">/*Отображать панель над остальным содержимым*/</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="com">#myPanel .row {</span><span class="pln">
+  background</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln"> </span><span class="com">#fff; /*Фон: белый*/</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="com">#myPanel img.pull-left {</span><span class="pln">
+  margin</span><span class="pun">-</span><span class="pln">left</span><span class="pun">:</span><span class="pln"> </span><span class="pun">-</span><span class="lit">15px</span><span class="pun">;</span><span class="pln"> </span><span class="com">/*Убираем отступ для левой картинки*/</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="com">#myPanel img.pull-right {</span><span class="pln">
+  margin</span><span class="pun">-</span><span class="pln">right</span><span class="pun">:</span><span class="pln"> </span><span class="pun">-</span><span class="lit">15px</span><span class="pun">;</span><span class="pln"> </span><span class="com">/*Убираем отступ для правой картинки*/</span><span class="pln">
+</span><span class="pun">}</span></pre>P.S. Настраиваем ширину и соответственно высоту изображения с помощью колонок Bootstrap: col-xs-4 col-sm-3 col-md-2.
+    </div>
+  </div>
+  <ol class="comments-list"></ol>
+</li></ol>
+</li>
+<li class="ticket-comment" id="comment-627">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="https://www.gravatar.com/avatar/58695415b21a600098e054b293ff8c10?s=24&amp;d=mm" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Иван</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2015-10-08" datetime="2015-10-08">08 октября 2015, 10:08</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-627">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      Такой вопрос, решил с помощью вкладок организовать так сказать просмотр видео, но столкнулся с проблемой, при открытии одной вкладки и просмотра видео на ней, если видео не остановить, то оно будет проигрывать до конца, в то же время можно переключиться на контент другой вкладки и там смотреть видео. В итоге видео в каждой вкладке будет накладываться друг на друга и будет полный хаос. Есть ли возможность как то организовать процесс перехода с одной вкладки на другую, чтобы при этом в неактивной вкладке видео останавливалось. Ну вы поняли вопрос. я так понимаю надо лезть в JS и там делать условие если вкладка не активна, то видео на паузу?
+    </div>
+  </div>
+  <ol class="comments-list"><li class="ticket-comment" id="comment-632">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="/assets/images/users/f2409a04b785f39f066901bb9f243868.jpg" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Александр Мальцев</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2015-10-08" datetime="2015-10-08">08 октября 2015, 14:49</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-632">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      Если необходимо чтобы показ видео просто прекращался, то можно воспользоваться более простым скриптом:<br>
+<pre class="prettyprint"><span class="tag">&lt;script&gt;</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'a[data-toggle="tab"]'</span><span class="pun">).</span><span class="pln">on</span><span class="pun">(</span><span class="str">'hide.bs.tab'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  $</span><span class="pun">(</span><span class="str">".tab-content .active iframe"</span><span class="pun">).</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"src"</span><span class="pun">,</span><span class="pln"> $</span><span class="pun">(</span><span class="str">'iframe'</span><span class="pun">).</span><span class="pln">attr</span><span class="pun">(</span><span class="str">'src'</span><span class="pun">));</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+</span><span class="tag">&lt;/script&gt;</span></pre>
+    </div>
+  </div>
+  <ol class="comments-list"></ol>
+</li><li class="ticket-comment" id="comment-630">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="/assets/images/users/f2409a04b785f39f066901bb9f243868.jpg" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Александр Мальцев</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2015-10-08" datetime="2015-10-08">08 октября 2015, 14:43</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-630">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      Для того чтобы видео при переключении вкладок ставилось на паузу можно воспользоваться следующим решением:<br>
+<pre class="prettyprint"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav nav-tabs"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"tablist"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#tab-video1"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"tab"</span><span class="tag">&gt;</span><span class="pln">Видео 1</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#tab-video2"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"tab"</span><span class="tag">&gt;</span><span class="pln">Видео 2</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#tab-video3"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"tab"</span><span class="tag">&gt;</span><span class="pln">Видео 3</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#tab-video4"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"tab"</span><span class="tag">&gt;</span><span class="pln">Видео 4</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tab-content"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tab-pane active"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"tab-video1"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;iframe</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"video1"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"https://www.youtube.com/embed/QECl5J9lj1o?enablejsapi=1&amp;html5=1"</span><span class="pln"> </span><span class="atn">frameborder</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><span class="atn">allowfullscreen</span><span class="tag">&gt;&lt;/iframe&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tab-pane"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"tab-video2"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;iframe</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"video2"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"https://www.youtube.com/embed/Bt3IzHn_2rE?enablejsapi=1&amp;html5=1"</span><span class="pln"> </span><span class="atn">frameborder</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><span class="atn">allowfullscreen</span><span class="tag">&gt;&lt;/iframe&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tab-pane"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"tab-video3"</span><span class="tag">&gt;</span><span class="pln">
+	</span><span class="tag">&lt;iframe</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"video3"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"https://www.youtube.com/embed/aVYaVToZI-w?enablejsapi=1&amp;html5=1"</span><span class="pln"> </span><span class="atn">frameborder</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><span class="atn">allowfullscreen</span><span class="tag">&gt;&lt;/iframe&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tab-pane"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"tab-video4"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;iframe</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"video4"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"https://www.youtube.com/embed/Dxs5-jselMQ?enablejsapi=1&amp;html5=1"</span><span class="pln"> </span><span class="atn">frameborder</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><span class="atn">allowfullscreen</span><span class="tag">&gt;&lt;/iframe&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;script&gt;</span><span class="pln">
+</span><span class="kwd">var</span><span class="pln"> player</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">function</span><span class="pln"> onYouTubeIframeAPIReady</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  player1 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> YT</span><span class="pun">.</span><span class="typ">Player</span><span class="pun">(</span><span class="str">'video1'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    events</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="str">'onReady'</span><span class="pun">:</span><span class="pln"> onPlayerReady
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">});</span><span class="pln">
+  player2 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> YT</span><span class="pun">.</span><span class="typ">Player</span><span class="pun">(</span><span class="str">'video2'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    events</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="str">'onReady'</span><span class="pun">:</span><span class="pln"> onPlayerReady
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">});</span><span class="pln">
+  player3 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> YT</span><span class="pun">.</span><span class="typ">Player</span><span class="pun">(</span><span class="str">'video3'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    events</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="str">'onReady'</span><span class="pun">:</span><span class="pln"> onPlayerReady
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">});</span><span class="pln">
+  player4 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> YT</span><span class="pun">.</span><span class="typ">Player</span><span class="pun">(</span><span class="str">'video4'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    events</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="str">'onReady'</span><span class="pun">:</span><span class="pln"> onPlayerReady
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">});</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">function</span><span class="pln"> onPlayerReady</span><span class="pun">(</span><span class="pln">event</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  $</span><span class="pun">(</span><span class="str">'a[data-toggle="tab"]'</span><span class="pun">).</span><span class="pln">on</span><span class="pun">(</span><span class="str">'hide.bs.tab'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    event</span><span class="pun">.</span><span class="pln">target</span><span class="pun">.</span><span class="pln">pauseVideo</span><span class="pun">();</span><span class="pln">
+  </span><span class="pun">});</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">var</span><span class="pln"> tag </span><span class="pun">=</span><span class="pln"> document</span><span class="pun">.</span><span class="pln">createElement</span><span class="pun">(</span><span class="str">'script'</span><span class="pun">);</span><span class="pln">
+tag</span><span class="pun">.</span><span class="pln">src </span><span class="pun">=</span><span class="pln"> </span><span class="str">"https://www.youtube.com/iframe_api"</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">var</span><span class="pln"> firstScriptTag </span><span class="pun">=</span><span class="pln"> document</span><span class="pun">.</span><span class="pln">getElementsByTagName</span><span class="pun">(</span><span class="str">'script'</span><span class="pun">)[</span><span class="lit">0</span><span class="pun">];</span><span class="pln">
+firstScriptTag</span><span class="pun">.</span><span class="pln">parentNode</span><span class="pun">.</span><span class="pln">insertBefore</span><span class="pun">(</span><span class="pln">tag</span><span class="pun">,</span><span class="pln"> firstScriptTag</span><span class="pun">);</span><span class="pln">
+</span><span class="tag">&lt;/script&gt;</span></pre>
+    </div>
+  </div>
+  <ol class="comments-list"></ol>
+</li></ol>
+</li>
+<li class="ticket-comment" id="comment-480">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="https://www.gravatar.com/avatar/ceca3b25c19874c3fcb87c956f2d6d43?s=24&amp;d=mm" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Артем</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2015-08-11" datetime="2015-08-11">11 августа 2015, 15:20</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-480">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      <blockquote>Не активные ссылки внутри навигационной панели</blockquote>В примере не проставлен класс disabled для второй ссылки.
+    </div>
+  </div>
+  <ol class="comments-list"><li class="ticket-comment" id="comment-482">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="/assets/images/users/f2409a04b785f39f066901bb9f243868.jpg" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Александр Мальцев</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2015-08-11" datetime="2015-08-11">11 августа 2015, 15:33</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-482">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      Спасибо, Артём. Поправил.
+    </div>
+  </div>
+  <ol class="comments-list"></ol>
+</li></ol>
+</li>
+<li class="ticket-comment" id="comment-299">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="https://www.gravatar.com/avatar/569452cc65ef84e6db366dbe5a10b090?s=24&amp;d=mm" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Дамир</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2015-06-04" datetime="2015-06-04">04 июня 2015, 21:36</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-299">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      Привет! <br>
+<br>
+1. По поводу <i>«Вкладки и кнопки навигационного меню, выровненные по ширине»<br>
+«Однако, данное меню работает только на устройствах, ширина экранов у которых, меньше чем 768px.»</i><br>
+<br>
+У меня работает на экране 1600 px, во всю ширину (12 столбцов) и в ячейках по 8 6 и т.д. <br>
+<br>
+2. <i>«Переключение вкладок навигационного меню»</i><br>
+Там в коде везде стоит «Содержание вкладки „<b>Главная</b>“» хотя нужно Главаня, Вопросы, Статьи.<br>
+<br>
+Также у меня не работает код<br>
+<pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    $</span><span class="pun">(</span><span class="str">'#myTabExample a:last'</span><span class="pun">).</span><span class="pln">tab</span><span class="pun">(</span><span class="str">'show'</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">})</span></pre>Заработал только когда сделал его таким:<br>
+<pre class="prettyprint"><span class="pln">jQuery</span><span class="pun">(</span><span class="pln">document</span><span class="pun">).</span><span class="pln">ready</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(</span><span class="pln">$</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        $</span><span class="pun">(</span><span class="str">'#myTabExample a:last'</span><span class="pun">).</span><span class="pln">tab</span><span class="pun">(</span><span class="str">'show'</span><span class="pun">);</span><span class="pln">
+ </span><span class="pun">});</span></pre>Спасибо!
+    </div>
+  </div>
+  <ol class="comments-list"><li class="ticket-comment" id="comment-303">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="/assets/images/users/f2409a04b785f39f066901bb9f243868.jpg" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Александр Мальцев</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2015-06-05" datetime="2015-06-05">05 июня 2015, 14:04</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-303">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      Дамир, спасибо!<br>
+Раздел «Панель с вкладками или кнопками, выровненными по ширине» поправил и добавил рисунок.
+    </div>
+  </div>
+  <ol class="comments-list"><li class="ticket-comment" id="comment-304">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="https://www.gravatar.com/avatar/569452cc65ef84e6db366dbe5a10b090?s=24&amp;d=mm" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Дамир</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2015-06-05" datetime="2015-06-05">05 июня 2015, 14:24</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-304">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      А можно .nav-justified (на всю ширину) добавить куда нибудь в меню (navbar)? а то что-то у меня не сработало?
+    </div>
+  </div>
+  <ol class="comments-list"><li class="ticket-comment" id="comment-306">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="/assets/images/users/f2409a04b785f39f066901bb9f243868.jpg" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Александр Мальцев</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2015-06-05" datetime="2015-06-05">05 июня 2015, 14:40</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-306">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      В NavBar такая возможность не поддерживается.
+    </div>
+  </div>
+  <ol class="comments-list"><li class="ticket-comment" id="comment-308">
+  <div itemprop="comment" itemscope="" itemtype="http://schema.org/Comment" class="ticket-comment-body">
+    <div class="ticket-comment-header">
+      <div class="ticket-comment-dot-wrapper"><div class="ticket-comment-dot"></div></div>
+      <img src="https://www.gravatar.com/avatar/569452cc65ef84e6db366dbe5a10b090?s=24&amp;d=mm" class="ticket-avatar" alt="">
+      <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person" class="ticket-comment-author"><span itemprop="name">Дамир</span></span>
+      <time itemprop="datePublished" class="ticket-comment-createdon" content="2015-06-05" datetime="2015-06-05">05 июня 2015, 15:19</time>
+      <span class="ticket-comment-link"><a href="lessons/bootstrap-3/37-bootstrap-3-navigation-panel#comment-308">#</a></span>
+
+      <!--span class="ticket-comment-down"><a href="#" data-child="">&darr;</a></span-->
+
+      <span class="ticket-comment-rating inactive">
+        <i class="icon icon-heart"></i>
+        <span class="rating">
+	        0
+	      </span>
+	      <!--span class="plus" title="Нравится">
+	        <i class="glyphicon glyphicon-arrow-up"></i>
+	      </span>
+	      <span class="minus" title="Не нравится">
+	        <i class="glyphicon glyphicon-arrow-down"></i>
+	      </span-->
+      </span>
+    </div>
+    <div itemprop="text" class="ticket-comment-text">
+      жаль,<br>
+было бы круто, на всю ширину элементы меню располагать
+    </div>
+  </div>
+  <ol class="comments-list"></ol>
+</li></ol>
+</li></ol>
+</li></ol>
+</li></ol>
+</li></ol>
+	</div>
+
+	<div id="comments-tpanel">
+		<div id="tpanel-refresh"></div>
+		<div id="tpanel-new"></div>
+	</div>
+
+</section><div class="ticket-comments alert alert-warning">
+    <p>Вы должны авторизоваться, чтобы оставлять комментарии.</p>
+</div>
+        </article>
+        <aside id="sidebar" class="col-md-4" style="min-height: 11832px;">
+          <section class="panel panel-info hidden-xs hidden-sm">
+  <div class="panel-heading">
+    <h5 class="panel-title">
+    <i class="icon icon-search"></i> Найти на сайте
+    </h5>
+  </div>
+  <div class="panel-body">
+    <form action="search" method="get" role="search">
+      <div class="input-group">
+        <input type="text" name="query" class="form-control" placeholder="Что найти?" value="">
+        <span class="input-group-btn">
+          <button type="submit" class="btn btn-info">Поиск</button>
+        </span>
+      </div>
+    </form>
+  </div>
+</section>
+          <nav class="panel panel-success" data-id="18">
+  <div class="panel-heading">
+    <h5 class="panel-title">
+      <i class="icon icon-rocket"></i> Навигация
+    </h5>
+    <div class="material-switch">
+      <input id="asidenav" name="asidenav" type="checkbox">
+      <label for="asidenav" class="label-success"></label>
+    </div>
+  </div>
+  <div class="panel-body">
+    Для включения дополнительной навигации по разделу переведите переключатель, расположенный в заголовке панели, в положение "Включено".
+  </div>
+</nav>
+          <div class="row text-center">
+<ins class="adsbygoogle adslot2" data-ad-client="ca-pub-5588980879362570" data-ad-slot="5727581445" data-adsbygoogle-status="done" style="width: 300px; height: 600px;"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe width="300" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;width:300px;height:600px;"></iframe></ins></ins></ins>
+</div>
+
+
+          <section id="tickets-popular" class="panel panel-warning">
+  <div class="panel-heading">
+    <h5 class="panel-title">
+      <i class="icon icon-heart"></i> Популярные статьи на сайте
+    </h5>
+  </div>
+  <div class="panel-body">
+    <div class="ticket-row" title="Количество просмотров: 160250">
+  <div class="ticket-idx">1</div>
+  <div class="ticket-pagetitle"><a href="lessons/bootstrap-3/38-bootstrap-3-navigation-menu">Bootstrap 3 - Горизонтальное меню Navbar</a></div>
+</div><div class="ticket-row" title="Количество просмотров: 147651">
+  <div class="ticket-idx">2</div>
+  <div class="ticket-pagetitle"><a href="lessons/bootstrap-3/22-the-grid-system-twitter-bootstrap-3">Bootstrap 3 - Сетка</a></div>
+</div><div class="ticket-row" title="Количество просмотров: 132715">
+  <div class="ticket-idx">3</div>
+  <div class="ticket-pagetitle"><a href="lessons/bootstrap-3/bootstrap-3-modal-window">Bootstrap - Модальное окно (modal)</a></div>
+</div><div class="ticket-row" title="Количество просмотров: 112406">
+  <div class="ticket-idx">4</div>
+  <div class="ticket-pagetitle"><a href="lessons/bootstrap-3/119-bootstrap-3-customize-the-navbar">Bootstrap 3 - Настройка компонента Navbar</a></div>
+</div><div class="ticket-row" title="Количество просмотров: 105900">
+  <div class="ticket-idx">5</div>
+  <div class="ticket-pagetitle"><a href="lessons/bootstrap-3/bootstrap-3-carousel">Bootstrap - Карусель (carousel)</a></div>
+</div><div class="ticket-row" title="Количество просмотров: 90191">
+  <div class="ticket-idx">6</div>
+  <div class="ticket-pagetitle"><a href="lessons/bootstrap-3/34-bootstrap-3-images">Bootstrap - Изображение (image)</a></div>
+</div><div class="ticket-row" title="Количество просмотров: 81522">
+  <div class="ticket-idx">7</div>
+  <div class="ticket-pagetitle"><a href="lessons/bootstrap-3/32-bootstrap-3-form">Bootstrap 3 - Формы</a></div>
+</div>
+  </div>
+</section>
+          <section id="section-vote" class="panel panel-warning">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <i class="icon icon-vote"></i> Опрос
+     (Дата окончания: 15.11.2017)</h4>
+  </div>
+  <div class="panel-body">
+    <div class="question">Используете ли вы при создании веб-проектов CSS препроцессор?</div>
+    <div class="main"><form id="vote" action="assets/components/polls/poll-vote.php" method="POST"><input type="hidden" name="count" value="6"><input type="hidden" name="id" value="pool-5"><div class="answers"><div class="radio"><label><input type="radio" name="poll" value="1">Нет, не использую</label></div><div class="radio"><label><input type="radio" name="poll" value="2">Да, применяю LESS</label></div><div class="radio"><label><input type="radio" name="poll" value="3">Да, использую SASS (SCSS)</label></div><div class="radio"><label><input type="radio" name="poll" value="4">Да, предпочитаю Stylus</label></div><div class="radio"><label><input type="radio" name="poll" value="5">Да, но это не LESS, не SASS (SCSS) и не Stylus</label></div><div class="radio"><label><input type="radio" name="poll" value="6">Да, но какой именно не имеет значения</label></div></div><button type="submit" class="btn btn-warning btn-lg btn-block" disabled="disabled">Голосовать</button></form></div>
+  </div>
+</section>
+          <section class="panel panel-warning">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <i class="icon icon-send" aria-hidden="true"></i> Подписка на статьи
+    </h4>
+  </div>
+  <div class="panel-body">
+    <p>Подпишитесь на email рассылку и вы всегда будете знать, какие новые статьи и вопросы появились на сайте ИТ Шеф.</p>
+    <a href="subscribe" class="btn btn-warning btn-block">Подписаться</a>
+  </div>
+</section>
+          <!-- Yandex.RTB R-A-161442-1 -->
+<div id="ya-aside" class="as-aside text-center">
+  <div id="yandex_ad_v" style="display: inline-block;"><yatag class="yap-R-A-161442-5 yap-reset" id="yap-R-A-161442-5"><yatag class="yap-layout yap-main yap-font-size yap-layout_type_compatible yap-type-vertical yap-layout_block_vertical"><yatag class="yap-layout__logo yap-logo yap-logo-bg-color"><yatag class="yap-logo-block"><yatag class="yap-logo-block__position yap-logo-position"><a class="yap-logo-block__text yap-logo-text yap-logo-color yap-logo-bg-color" target="_blank" href="https://direct.yandex.ru/?partner">Яндекс.Директ</a></yatag><yatag class="yap-logo-block__arrow yap-logo-arrow"></yatag></yatag></yatag><yatag class="yap-layout__wrapper yap-list-wrapper yap-font-family yap-border-color"><table class="yap-layout__items yap-list"><tbody><tr><td data-id="4518216826" data-uniq-id="1508003214858" class="yap-layout__item yap-item yap-border-color yap-layout__item_nth_1 yap-layout__item_picture_true yap-item-has-picture   yap-layout__item_adtune"><yatag class="yap-layout__outer"><yatag class="yap-layout__inner yap-item-inner"><yatag class="yap-layout__picture" style="width: 90px"><yatag class="yap-layout__picture-placeholder"><yatag class="elastic-wide-img__picture-container yap-layout__elastic-picture-container"><a class="elastic-wide-img__picture yap-picture-bg" href="https://an.yandex.ru/count/Fr68XIusPMi40000ZhZO99u5XP9g9vK1cm5kGxS28uYcRzw0YQa00uIO__________yFdWMTe8dF0RhuZ-xh6fgOJ0kc1ugwH-ZK4DoyA9KM4Rs-byjz2Qe1fQoOeWYyg55d2Dq1tf0azFI-3-zq8f6ZX5ykbz800000M0IFi9yyhmIVlKq29GsJXGsPUqACfCf70RQKLcArabPJeA32MW6lfCf70REQA5YqabPJsQjLmm7QaBzob9rN9gU32QYmG5bp1wJ000004m6i3AxtnmBdxBE1GWMmjOAX0mQn0RBAKm02G0ZvzyS2v-opWK85_0lze8R8lhcWYSy1k_GGehIgAL6S0i7__________m_2zgpJNJTwnQW3n075Zm_DiqVer13Ei2YL5X7J0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPkL9_NHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxfCf70NWi?test-tag=76417336344577&amp;stat-id=5&amp;" target="_blank" style="width: auto !important; height: 120px !important;"><yatag class="yap-picture-bg__bg yap-bg"><yatag class="yap-bg__bg" style="background-image: url(&quot;//avatars.mds.yandex.net/get-direct/364710/cODaiwI1HS0yDVDs9Q1b0A/wy150&quot;) !important;"></yatag><yatag class="yap-picture-bg__picture yap-picture-bg_full-width_false yap-picture yap-picture_touch_false" style="margin-top: 0px !important; margin-bottom: 0px !important; width: 100% !important; height: 120px !important;"><yatag class="yap-picture__container" style="width: 214px !important; height: 120px !important; margin-left: -107px !important;"><img class="yap-picture__img" alt="" src="//avatars.mds.yandex.net/get-direct/364710/cODaiwI1HS0yDVDs9Q1b0A/wy150" style="width: 214px !important; height: 120px !important; max-width: 214px !important;"></yatag></yatag></yatag></a></yatag></yatag></yatag><yatag class="yap-layout__content"><yatag class="yap-layout__title"><yatag class="yap-title-block yap-title "><a href="https://an.yandex.ru/count/Fr68XIusPMi40000ZhZO99u5XP9g9vK1cm5kGxS28uYcRzw0YQa00uIO__________yFdWMTe8dF0RhuZ-xh6fgOJ0kc1ugwH-ZK4DoyA9KM4Rs-byjz2Qe1fQoOeWYyg55d2Dq1tf0azFI-3-zq8f6ZX5ykbz800000M0IFi9yyhmIVlKq29GsJXGsPUqACfCf70RQKLcArabPJeA32MW6lfCf70REQA5YqabPJsQjLmm7QaBzob9rN9gU32QYmG5bp1wJ000004m6i3AxtnmBdxBE1GWMmjOAX0mQn0RBAKm02G0ZvzyS2v-opWK85_0lze8R8lhcWYSy1k_GGehIgAL6S0i7__________m_2zgpJNJTwnQW3n075Zm_DiqVer13Ei2YL5X7J0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPkL9_NHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxfCf70NWi?test-tag=76416262602753&amp;stat-id=5&amp;" target="_blank" class="yap-title-block__text yap-title-text yap-title-font-size yap-title-color yap-title-hover-color"><yatag class="yap-title-block__text_inner"><b>Porsche Macan</b> от&nbsp;3&nbsp;245&nbsp;500р!</yatag><yatag class="yap-title-block__text_inner yap-adv__title_second"></yatag></a></yatag></yatag><a class="yap-domain yap-domain-text yap-domain_long" target="_blank" href="https://an.yandex.ru/count/Fr68XIusPMi40000ZhZO99u5XP9g9vK1cm5kGxS28uYcRzw0YQa00uIO__________yFdWMTe8dF0RhuZ-xh6fgOJ0kc1ugwH-ZK4DoyA9KM4Rs-byjz2Qe1fQoOeWYyg55d2Dq1tf0azFI-3-zq8f6ZX5ykbz800000M0IFi9yyhmIVlKq29GsJXGsPUqACfCf70RQKLcArabPJeA32MW6lfCf70REQA5YqabPJsQjLmm7QaBzob9rN9gU32QYmG5bp1wJ000004m6i3AxtnmBdxBE1GWMmjOAX0mQn0RBAKm02G0ZvzyS2v-opWK85_0lze8R8lhcWYSy1k_GGehIgAL6S0i7__________m_2zgpJNJTwnQW3n075Zm_DiqVer13Ei2YL5X7J0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPkL9_NHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxfCf70NWi?test-tag=76416262602753&amp;stat-id=5&amp;"><yatag class="yap-domain__favicon-container"><img class="yap-favicon" src="https://favicon.yandex.net/favicon/porsche-moscow.ru" alt=""></yatag><yatag class="yap-domain__text-container"><yatag class="yap-domain__text">porsche-moscow.ru/<yatag class="yap-domain__path">Macan-с-выгодой</yatag></yatag></yatag></a><yatag class="yap-layout__body yap-text"><yatag class="yap-body-text yap-text-color"><wbr>Только в октябре! Меняем Ваше пред­став­ление о покупке <b>Porsche Macan</b>!</yatag></yatag><yatag class="yap-layout__sitelinks"><yatag class="yap-sitelinks"><a class="yap-sitelinks__link yap-sitelink-text" target="_blank" href="https://an.yandex.ru/count/Fr68XGvbTGO40000ZhZO99u5XP9g9vK1cm5kGxS28uYcRzw0YQa00uIO__________yFdWMTe8dF0RhuZ-xh6fgOJ0kc1ugwH-ZK4DoyA9KM4Rs-byjz2QeVfQoOeWYyg55d2Dq1tf0azFI-3-zq8f6ZX5ykbz800000M0IFi9yyhmIVlKq29GsJXGsPUqACfCf70RQKLcArabPJeA32MW6lfCf70REQA5YqabPJsQjLmm7QaBzob9rN9gU32QYmG5bp1wJ000004m6i3AxtnmBdxBE1GWMmjOAX0mQn0RBAKm02G0ZvzyS2v-opWK85_0lze8R8lhcWYSy1k_GGehIgAL6S0i7__________m_2zgpJNJTwnQW3n075Zm_DiqVer13Ei2YL5X7J0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPkL9_NHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxfCf70NWi?test-tag=76416262602753&amp;stat-id=5&amp;"><yatag class="yap-sitelinks__inner">Macan в&nbsp;наличии</yatag></a><a class="yap-sitelinks__link yap-sitelink-text" target="_blank" href="https://an.yandex.ru/count/Fr68XRTQ0C840000ZhZO99u5XP9g9vK1cm5kGxS28uYcRzw0YQa00uIO__________yFdWMTe8dF0RhuZ-xh6fgOJ0kc1ugwH-ZK4DoyA9KM4Rs-byjz2QeXfQoOeWYyg55d2Dq1tf0azFI-3-zq8f6ZX5ykbz800000M0IFi9yyhmIVlKq29GsJXGsPUqACfCf70RQKLcArabPJeA32MW6lfCf70REQA5YqabPJsQjLmm7QaBzob9rN9gU32QYmG5bp1wJ000004m6i3AxtnmBdxBE1GWMmjOAX0mQn0RBAKm02G0ZvzyS2v-opWK85_0lze8R8lhcWYSy1k_GGehIgAL6S0i7__________m_2zgpJNJTwnQW3n075Zm_DiqVer13Ei2YL5X7J0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPkL9_NHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxfCf70NWi?test-tag=76416262602753&amp;stat-id=5&amp;"><yatag class="yap-sitelinks__inner">Macan в&nbsp;кредит</yatag></a><a class="yap-sitelinks__link yap-sitelink-text" target="_blank" href="https://an.yandex.ru/count/Fr68XKx3LTm40000ZhZO99u5XP9g9vK1cm5kGxS28uYcRzw0YQa00uIO__________yFdWMTe8dF0RhuZ-xh6fgOJ0kc1ugwH-ZK4DoyA9KM4Rs-byjz2QeZfQoOeWYyg55d2Dq1tf0azFI-3-zq8f6ZX5ykbz800000M0IFi9yyhmIVlKq29GsJXGsPUqACfCf70RQKLcArabPJeA32MW6lfCf70REQA5YqabPJsQjLmm7QaBzob9rN9gU32QYmG5bp1wJ000004m6i3AxtnmBdxBE1GWMmjOAX0mQn0RBAKm02G0ZvzyS2v-opWK85_0lze8R8lhcWYSy1k_GGehIgAL6S0i7__________m_2zgpJNJTwnQW3n075Zm_DiqVer13Ei2YL5X7J0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPkL9_NHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxfCf70NWi?test-tag=76416262602753&amp;stat-id=5&amp;"><yatag class="yap-sitelinks__inner">Тест-драйв Macan</yatag></a></yatag></yatag><yatag class="yap-layout__contacts"><yatag class="yap-contacts"><yatag class="yap-contacts__item"><a class="yap-contacts__item-link" target="_blank" href="https://an.yandex.ru/count/Fr68XV_id0W40000ZhZO99u5XP9g9vK1cm5kGxS28uYcRzw0YQa00uIO__________yFdWMTe8dF0RhuZ-xh6fgOJ0kc1ugwH-ZK4DoyA9KM4Rs-byjz2Qe7fQoOeWYyg55d2Dq1tf0azFI-3-zq8f6ZX5ykbz800000M0IFi9yyhmIVlKq29GsJXGsPUqACfCf70RQKLcArabPJeA32MW6lfCf70REQA5YqabPJsQjLmm7QaBzob9rN9gU32QYmG5bp1wJ000004m6i3AxtnmBdxBE1GWMmjOAX0mQn0RBAKm02G0ZvzyS2v-opWK85_0lze8R8lhcWYSy1k_GGehIgAL6S0i7__________m_2zgpJNJTwnQW3n075Zm_DiqVer13Ei2YL5X7J0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPkL9_NHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxfCf70NWi?test-tag=76416262602753&amp;stat-id=5&amp;">Адрес&nbsp;и&nbsp;телефон</a></yatag><yatag class="yap-contacts__item"><yatag class="yap-contacts__item-text yap-domain-text">Москва</yatag></yatag></yatag></yatag></yatag><yatag class="yap-layout__adtune"><yatag class="yap-adtune yap-adtune_touch_false yap-adtune_oldie_false"><yatag class="yap-adtune__button"><yatag class="yap-adtune-icon yap-adtune-icon_touch_false yap-adtune-icon_size_m yap-adtune-icon_fallback_false"><yatag class="yap-adtune-icon__container"><yatag class="yap-adtune-icon__image" style="width: 8px !important; height: 8px !important;"><svg width="8px" height="8px" viewBox="0 0 14 14" version="1.1"><polygon points="14,0.7 13.3,0 7,6.299 0.7,0 0,0.7 6.3,7 0,13.299 0.7,14 7,7.7 13.3,14 14,13.299 7.7,7"></polygon></svg></yatag><yatag class="yap-adtune-icon__tooltip"><yatag class="yap-adtune-icon__tooltip-arrow"></yatag><yatag class="yap-adtune-icon__tooltip-text">Скрыть&nbsp;объявление</yatag></yatag></yatag></yatag></yatag></yatag></yatag></yatag><yatag class="yap-layout__adtune-message"></yatag></yatag></td></tr><tr><td data-id="4941408630" data-uniq-id="1508003213221" class="yap-layout__item yap-item yap-border-color yap-layout__item_nth_2 yap-layout__item_picture_true yap-item-has-picture   yap-layout__item_adtune"><yatag class="yap-layout__outer"><yatag class="yap-layout__inner yap-item-inner"><yatag class="yap-layout__picture" style="width: 90px"><yatag class="yap-picture-block" style="width: 90px; height: 68px;"><a target="_blank" href="https://an.yandex.ru/count/Fr68XSnv9Q040000ZhZO99u5XP9g9vK1cm5kGxS28pA8ljo3rGQ9jYNBeWIOfGIzlfu5dQsNLW6w-8_kwngQc4mBfeS8YhQNVcWItBRC610IlRpmnpy6gW6bh3kn2RoboJC9tG7Ua2JqzB3nkzaNaQE4NowNqW00001O18-wPF8a3f-_SxmB2fE53Pb4GeofcZO1jfOkNRMPzqwWfiT30Q-fcZO1iv5HKhIPzqxPfHs00TgGg66dWmcei41PSmUam00001C1hlV70kViiu521R2rWg431h41iifJ00902FdtnmBdxBE1GWNy2_sb1Bs-kQsNLW6xz12YjAefKPm2mV__________3yBshDDTDth5g0F5Zm_Dj0LjQ1BEkx0O41BJ0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPQ29VNHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxgPes0Nyg?test-tag=76417336344577&amp;stat-id=5&amp;" class="yap-picture-block__link" style="width: 90px !important;height: 68px !important;margin-left: -45px !important;"><img class="yap-picture-block__image yap-image" src="//avatars.mds.yandex.net/get-direct/200649/v1uj4XbyVVfgvku3t-N7cw/x90" alt="" style="width: 90px !important;max-width: 90px !important;height: 68px !important;"></a></yatag></yatag><yatag class="yap-layout__content"><yatag class="yap-layout__title"><yatag class="yap-title-block yap-title "><a href="https://an.yandex.ru/count/Fr68XSnv9Q040000ZhZO99u5XP9g9vK1cm5kGxS28pA8ljo3rGQ9jYNBeWIOfGIzlfu5dQsNLW6w-8_kwngQc4mBfeS8YhQNVcWItBRC610IlRpmnpy6gW6bh3kn2RoboJC9tG7Ua2JqzB3nkzaNaQE4NowNqW00001O18-wPF8a3f-_SxmB2fE53Pb4GeofcZO1jfOkNRMPzqwWfiT30Q-fcZO1iv5HKhIPzqxPfHs00TgGg66dWmcei41PSmUam00001C1hlV70kViiu521R2rWg431h41iifJ00902FdtnmBdxBE1GWNy2_sb1Bs-kQsNLW6xz12YjAefKPm2mV__________3yBshDDTDth5g0F5Zm_Dj0LjQ1BEkx0O41BJ0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPQ29VNHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxgPes0Nyg?test-tag=76416262602753&amp;stat-id=5&amp;" target="_blank" class="yap-title-block__text yap-title-text yap-title-font-size yap-title-color yap-title-hover-color"><yatag class="yap-title-block__text_inner">Обнов­ленная <b>TOYOTA CAMRY</b> в&nbsp;Москве</yatag><yatag class="yap-title-block__text_inner yap-adv__title_second"></yatag></a></yatag></yatag><a class="yap-domain yap-domain-text yap-domain_long" target="_blank" href="https://an.yandex.ru/count/Fr68XSnv9Q040000ZhZO99u5XP9g9vK1cm5kGxS28pA8ljo3rGQ9jYNBeWIOfGIzlfu5dQsNLW6w-8_kwngQc4mBfeS8YhQNVcWItBRC610IlRpmnpy6gW6bh3kn2RoboJC9tG7Ua2JqzB3nkzaNaQE4NowNqW00001O18-wPF8a3f-_SxmB2fE53Pb4GeofcZO1jfOkNRMPzqwWfiT30Q-fcZO1iv5HKhIPzqxPfHs00TgGg66dWmcei41PSmUam00001C1hlV70kViiu521R2rWg431h41iifJ00902FdtnmBdxBE1GWNy2_sb1Bs-kQsNLW6xz12YjAefKPm2mV__________3yBshDDTDth5g0F5Zm_Dj0LjQ1BEkx0O41BJ0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPQ29VNHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxgPes0Nyg?test-tag=76416262602753&amp;stat-id=5&amp;"><yatag class="yap-domain__favicon-container"><img class="yap-favicon" src="https://favicon.yandex.net/favicon/toyota-i.ru" alt=""></yatag><yatag class="yap-domain__text-container"><yatag class="yap-domain__text">toyota-i.ru/<yatag class="yap-domain__path">CAMRY-в-Измайлово</yatag></yatag></yatag></a><yatag class="yap-layout__body yap-text"><yatag class="yap-body-text yap-text-color"><wbr>ВЫГОДНЫЕ условия покупки в кредит! Сниженная ставка 9,2%. Платеж от 9.200 ₽/месяц!</yatag></yatag><yatag class="yap-layout__sitelinks"><yatag class="yap-sitelinks"><a class="yap-sitelinks__link yap-sitelink-text" target="_blank" href="https://an.yandex.ru/count/Fr68XLFdmMy40000ZhZO99u5XP9g9vK1cm5kGxS28pA8ljo3rGQ9jYNBeWIOfGIzlfu5dQsNLW6w-8_kwngQc4mBfeS8YhQNVcWItBRC610IlRpmnpy6gX-bh3kn2RoboJC9tG7Ua2JqzB3nkzaNaQE4NowNqW00001O18-wPF8a3f-_SxmB2fE53Pb4GeofcZO1jfOkNRMPzqwWfiT30Q-fcZO1iv5HKhIPzqxPfHs00TgGg66dWmcei41PSmUam00001C1hlV70kViiu521R2rWg431h41iifJ00902FdtnmBdxBE1GWNy2_sb1Bs-kQsNLW6xz12YjAefKPm2mV__________3yBshDDTDth5g0F5Zm_Dj0LjQ1BEkx0O41BJ0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPQ29VNHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxgPes0Nyg?test-tag=76416262602753&amp;stat-id=5&amp;"><yatag class="yap-sitelinks__inner">CAMRY: Акции</yatag></a><a class="yap-sitelinks__link yap-sitelink-text" target="_blank" href="https://an.yandex.ru/count/Fr68XJvQu3q40000ZhZO99u5XP9g9vK1cm5kGxS28pA8ljo3rGQ9jYNBeWIOfGIzlfu5dQsNLW6w-8_kwngQc4mBfeS8YhQNVcWItBRC610IlRpmnpy6gY6bh3kn2RoboJC9tG7Ua2JqzB3nkzaNaQE4NowNqW00001O18-wPF8a3f-_SxmB2fE53Pb4GeofcZO1jfOkNRMPzqwWfiT30Q-fcZO1iv5HKhIPzqxPfHs00TgGg66dWmcei41PSmUam00001C1hlV70kViiu521R2rWg431h41iifJ00902FdtnmBdxBE1GWNy2_sb1Bs-kQsNLW6xz12YjAefKPm2mV__________3yBshDDTDth5g0F5Zm_Dj0LjQ1BEkx0O41BJ0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPQ29VNHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxgPes0Nyg?test-tag=76416262602753&amp;stat-id=5&amp;"><yatag class="yap-sitelinks__inner">CAMRY: Цены</yatag></a><a class="yap-sitelinks__link yap-sitelink-text" target="_blank" href="https://an.yandex.ru/count/Fr68XRUh3h040000ZhZO99u5XP9g9vK1cm5kGxS28pA8ljo3rGQ9jYNBeWIOfGIzlfu5dQsNLW6w-8_kwngQc4mBfeS8YhQNVcWItBRC610IlRpmnpy6gYEbh3kn2RoboJC9tG7Ua2JqzB3nkzaNaQE4NowNqW00001O18-wPF8a3f-_SxmB2fE53Pb4GeofcZO1jfOkNRMPzqwWfiT30Q-fcZO1iv5HKhIPzqxPfHs00TgGg66dWmcei41PSmUam00001C1hlV70kViiu521R2rWg431h41iifJ00902FdtnmBdxBE1GWNy2_sb1Bs-kQsNLW6xz12YjAefKPm2mV__________3yBshDDTDth5g0F5Zm_Dj0LjQ1BEkx0O41BJ0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPQ29VNHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxgPes0Nyg?test-tag=76416262602753&amp;stat-id=5&amp;"><yatag class="yap-sitelinks__inner">CAMRY: Комплектации</yatag></a><a class="yap-sitelinks__link yap-sitelink-text" target="_blank" href="https://an.yandex.ru/count/Fr68XVt_laS40000ZhZO99u5XP9g9vK1cm5kGxS28pA8ljo3rGQ9jYNBeWIOfGIzlfu5dQsNLW6w-8_kwngQc4mBfeS8YhQNVcWItBRC610IlRpmnpy6gYkbh3kn2RoboJC9tG7Ua2JqzB3nkzaNaQE4NowNqW00001O18-wPF8a3f-_SxmB2fE53Pb4GeofcZO1jfOkNRMPzqwWfiT30Q-fcZO1iv5HKhIPzqxPfHs00TgGg66dWmcei41PSmUam00001C1hlV70kViiu521R2rWg431h41iifJ00902FdtnmBdxBE1GWNy2_sb1Bs-kQsNLW6xz12YjAefKPm2mV__________3yBshDDTDth5g0F5Zm_Dj0LjQ1BEkx0O41BJ0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPQ29VNHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxgPes0Nyg?test-tag=76416262602753&amp;stat-id=5&amp;"><yatag class="yap-sitelinks__inner">Дарим до&nbsp;10.000 бонусов</yatag></a></yatag></yatag><yatag class="yap-layout__contacts"><yatag class="yap-contacts"><yatag class="yap-contacts__item"><a class="yap-contacts__item-link" target="_blank" href="https://an.yandex.ru/count/Fr68XOqQ47O40000ZhZO99u5XP9g9vK1cm5kGxS28pA8ljo3rGQ9jYNBeWIOfGIzlfu5dQsNLW6w-8_kwngQc4mBfeS8YhQNVcWItBRC610IlRpmnpy6gWUbh3kn2RoboJC9tG7Ua2JqzB3nkzaNaQE4NowNqW00001O18-wPF8a3f-_SxmB2fE53Pb4GeofcZO1jfOkNRMPzqwWfiT30Q-fcZO1iv5HKhIPzqxPfHs00TgGg66dWmcei41PSmUam00001C1hlV70kViiu521R2rWg431h41iifJ00902FdtnmBdxBE1GWNy2_sb1Bs-kQsNLW6xz12YjAefKPm2mV__________3yBshDDTDth5g0F5Zm_Dj0LjQ1BEkx0O41BJ0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPQ29VNHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxgPes0Nyg?test-tag=76416262602753&amp;stat-id=5&amp;">Адрес&nbsp;и&nbsp;телефон</a></yatag></yatag></yatag></yatag><yatag class="yap-layout__adtune"><yatag class="yap-adtune yap-adtune_touch_false yap-adtune_oldie_false"><yatag class="yap-adtune__button"><yatag class="yap-adtune-icon yap-adtune-icon_touch_false yap-adtune-icon_size_m yap-adtune-icon_fallback_false"><yatag class="yap-adtune-icon__container"><yatag class="yap-adtune-icon__image" style="width: 8px !important; height: 8px !important;"><svg width="8px" height="8px" viewBox="0 0 14 14" version="1.1"><polygon points="14,0.7 13.3,0 7,6.299 0.7,0 0,0.7 6.3,7 0,13.299 0.7,14 7,7.7 13.3,14 14,13.299 7.7,7"></polygon></svg></yatag><yatag class="yap-adtune-icon__tooltip"><yatag class="yap-adtune-icon__tooltip-arrow"></yatag><yatag class="yap-adtune-icon__tooltip-text">Скрыть&nbsp;объявление</yatag></yatag></yatag></yatag></yatag></yatag></yatag></yatag><yatag class="yap-layout__adtune-message"></yatag></yatag></td></tr><tr><td data-id="1900441786" data-uniq-id="1508003214725" class="yap-layout__item yap-item yap-border-color yap-layout__item_nth_3 yap-layout__item_picture_true yap-item-has-picture   yap-layout__item_adtune"><yatag class="yap-layout__outer"><yatag class="yap-layout__inner yap-item-inner"><yatag class="yap-layout__picture" style="width: 90px"><yatag class="yap-layout__picture-placeholder"><yatag class="elastic-wide-img__picture-container yap-layout__elastic-picture-container"><a class="elastic-wide-img__picture yap-picture-bg" href="https://an.yandex.ru/count/Fr68XL8_Zb040000ZhZO99u5XP9g9vK1cm5kGxS28pE8lMVru0Q9lMbZbWIOhi2zlfu5dQteCXAw-8_kwngQc4mBfee8YheBPnG7tBiu--S8lRF1QLq3gW6beh501hohmX46tG7Ua2JqaQE4NowNqW00001O18-qdCHI3v-m2Xcb2fE53Pa-GeoQyu-sc2yhjP6P9A2G2v2lclEFiv2V9BIHcIJPa0kGsf2V99IKPHcdYnEekOkj7G6am00001C1hlV70kViiu521R2rWg431h41iifJ00902FdtnmBdxBE1GWNy2_skmBs-kQteCXAxz12YjAefKPm2mV__________3yBshDDTDth5g0F5Zm_Dkmjd50VEjpZxvmZJ0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPHY4VNHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxclEFU2e0?test-tag=76417336344577&amp;stat-id=5&amp;" target="_blank" style="width: auto !important; height: 120px !important;"><yatag class="yap-picture-bg__bg yap-bg"><yatag class="yap-bg__bg" style="background-image: url(&quot;//avatars.mds.yandex.net/get-direct/168197/5EdFdorIsdzfaKfe3SzZQg/wy150&quot;) !important;"></yatag><yatag class="yap-picture-bg__picture yap-picture-bg_full-width_false yap-picture yap-picture_touch_false" style="margin-top: 0px !important; margin-bottom: 0px !important; width: 100% !important; height: 120px !important;"><yatag class="yap-picture__container" style="width: 214px !important; height: 120px !important; margin-left: -107px !important;"><img class="yap-picture__img" alt="" src="//avatars.mds.yandex.net/get-direct/168197/5EdFdorIsdzfaKfe3SzZQg/wy150" style="width: 214px !important; height: 120px !important; max-width: 214px !important;"></yatag></yatag></yatag></a></yatag></yatag></yatag><yatag class="yap-layout__content"><yatag class="yap-layout__title"><yatag class="yap-title-block yap-title "><a href="https://an.yandex.ru/count/Fr68XL8_Zb040000ZhZO99u5XP9g9vK1cm5kGxS28pE8lMVru0Q9lMbZbWIOhi2zlfu5dQteCXAw-8_kwngQc4mBfee8YheBPnG7tBiu--S8lRF1QLq3gW6beh501hohmX46tG7Ua2JqaQE4NowNqW00001O18-qdCHI3v-m2Xcb2fE53Pa-GeoQyu-sc2yhjP6P9A2G2v2lclEFiv2V9BIHcIJPa0kGsf2V99IKPHcdYnEekOkj7G6am00001C1hlV70kViiu521R2rWg431h41iifJ00902FdtnmBdxBE1GWNy2_skmBs-kQteCXAxz12YjAefKPm2mV__________3yBshDDTDth5g0F5Zm_Dkmjd50VEjpZxvmZJ0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPHY4VNHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxclEFU2e0?test-tag=76416262602753&amp;stat-id=5&amp;" target="_blank" class="yap-title-block__text yap-title-text yap-title-font-size yap-title-color yap-title-hover-color"><yatag class="yap-title-block__text_inner"><b>3D фигурка</b> человека от&nbsp;5990&nbsp;руб.</yatag><yatag class="yap-title-block__text_inner yap-adv__title_second"></yatag></a></yatag></yatag><a class="yap-domain yap-domain-text yap-domain_long" target="_blank" href="https://an.yandex.ru/count/Fr68XL8_Zb040000ZhZO99u5XP9g9vK1cm5kGxS28pE8lMVru0Q9lMbZbWIOhi2zlfu5dQteCXAw-8_kwngQc4mBfee8YheBPnG7tBiu--S8lRF1QLq3gW6beh501hohmX46tG7Ua2JqaQE4NowNqW00001O18-qdCHI3v-m2Xcb2fE53Pa-GeoQyu-sc2yhjP6P9A2G2v2lclEFiv2V9BIHcIJPa0kGsf2V99IKPHcdYnEekOkj7G6am00001C1hlV70kViiu521R2rWg431h41iifJ00902FdtnmBdxBE1GWNy2_skmBs-kQteCXAxz12YjAefKPm2mV__________3yBshDDTDth5g0F5Zm_Dkmjd50VEjpZxvmZJ0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPHY4VNHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxclEFU2e0?test-tag=76416262602753&amp;stat-id=5&amp;"><yatag class="yap-domain__favicon-container"><img class="yap-favicon" src="https://favicon.yandex.net/favicon/bein3d.ru" alt=""></yatag><yatag class="yap-domain__text-container"><yatag class="yap-domain__text">bein3d.ru/<yatag class="yap-domain__path">3D-копия-человека</yatag></yatag></yatag></a><yatag class="yap-layout__body yap-text"><yatag class="yap-body-text yap-text-color"><wbr><b>3D</b> печать <b>фигурок</b> - мини-копий человека! Для себя и для близких! Качество!</yatag></yatag><yatag class="yap-layout__sitelinks"><yatag class="yap-sitelinks"><a class="yap-sitelinks__link yap-sitelink-text" target="_blank" href="https://an.yandex.ru/count/Fr68XJGylg440000ZhZO99u5XP9g9vK1cm5kGxS28pE8lMVru0Q9lMbZbWIOhi2zlfu5dQteCXAw-8_kwngQc4mBfee8YheBPnG7tBiu--S8lRF1QLq3gX-beh501hohmX46tG7Ua2JqaQE4NowNqW00001O18-qdCHI3v-m2Xcb2fE53Pa-GeoQyu-sc2yhjP6P9A2G2v2lclEFiv2V9BIHcIJPa0kGsf2V99IKPHcdYnEekOkj7G6am00001C1hlV70kViiu521R2rWg431h41iifJ00902FdtnmBdxBE1GWNy2_skmBs-kQteCXAxz12YjAefKPm2mV__________3yBshDDTDth5g0F5Zm_Dkmjd50VEjpZxvmZJ0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPHY4VNHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxclEFU2e0?test-tag=76416262602753&amp;stat-id=5&amp;"><yatag class="yap-sitelinks__inner">Подарочный сертификат</yatag></a><a class="yap-sitelinks__link yap-sitelink-text" target="_blank" href="https://an.yandex.ru/count/Fr68XGtA5Ra40000ZhZO99u5XP9g9vK1cm5kGxS28pE8lMVru0Q9lMbZbWIOhi2zlfu5dQteCXAw-8_kwngQc4mBfee8YheBPnG7tBiu--S8lRF1QLq3gY6beh501hohmX46tG7Ua2JqaQE4NowNqW00001O18-qdCHI3v-m2Xcb2fE53Pa-GeoQyu-sc2yhjP6P9A2G2v2lclEFiv2V9BIHcIJPa0kGsf2V99IKPHcdYnEekOkj7G6am00001C1hlV70kViiu521R2rWg431h41iifJ00902FdtnmBdxBE1GWNy2_skmBs-kQteCXAxz12YjAefKPm2mV__________3yBshDDTDth5g0F5Zm_Dkmjd50VEjpZxvmZJ0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPHY4VNHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxclEFU2e0?test-tag=76416262602753&amp;stat-id=5&amp;"><yatag class="yap-sitelinks__inner">Стоимость</yatag></a><a class="yap-sitelinks__link yap-sitelink-text" target="_blank" href="https://an.yandex.ru/count/Fr68XVWwtqC40000ZhZO99u5XP9g9vK1cm5kGxS28pE8lMVru0Q9lMbZbWIOhi2zlfu5dQteCXAw-8_kwngQc4mBfee8YheBPnG7tBiu--S8lRF1QLq3gYEbeh501hohmX46tG7Ua2JqaQE4NowNqW00001O18-qdCHI3v-m2Xcb2fE53Pa-GeoQyu-sc2yhjP6P9A2G2v2lclEFiv2V9BIHcIJPa0kGsf2V99IKPHcdYnEekOkj7G6am00001C1hlV70kViiu521R2rWg431h41iifJ00902FdtnmBdxBE1GWNy2_skmBs-kQteCXAxz12YjAefKPm2mV__________3yBshDDTDth5g0F5Zm_Dkmjd50VEjpZxvmZJ0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPHY4VNHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxclEFU2e0?test-tag=76416262602753&amp;stat-id=5&amp;"><yatag class="yap-sitelinks__inner">Контакты</yatag></a><a class="yap-sitelinks__link yap-sitelink-text" target="_blank" href="https://an.yandex.ru/count/Fr68XPaR-2a40000ZhZO99u5XP9g9vK1cm5kGxS28pE8lMVru0Q9lMbZbWIOhi2zlfu5dQteCXAw-8_kwngQc4mBfee8YheBPnG7tBiu--S8lRF1QLq3gYkbeh501hohmX46tG7Ua2JqaQE4NowNqW00001O18-qdCHI3v-m2Xcb2fE53Pa-GeoQyu-sc2yhjP6P9A2G2v2lclEFiv2V9BIHcIJPa0kGsf2V99IKPHcdYnEekOkj7G6am00001C1hlV70kViiu521R2rWg431h41iifJ00902FdtnmBdxBE1GWNy2_skmBs-kQteCXAxz12YjAefKPm2mV__________3yBshDDTDth5g0F5Zm_Dkmjd50VEjpZxvmZJ0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPHY4VNHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxclEFU2e0?test-tag=76416262602753&amp;stat-id=5&amp;"><yatag class="yap-sitelinks__inner">Преимущества</yatag></a></yatag></yatag><yatag class="yap-layout__contacts"><yatag class="yap-contacts"><yatag class="yap-contacts__item"><a class="yap-contacts__item-link" target="_blank" href="https://an.yandex.ru/count/Fr68XPTVrny40000ZhZO99u5XP9g9vK1cm5kGxS28pE8lMVru0Q9lMbZbWIOhi2zlfu5dQteCXAw-8_kwngQc4mBfee8YheBPnG7tBiu--S8lRF1QLq3gWUbeh501hohmX46tG7Ua2JqaQE4NowNqW00001O18-qdCHI3v-m2Xcb2fE53Pa-GeoQyu-sc2yhjP6P9A2G2v2lclEFiv2V9BIHcIJPa0kGsf2V99IKPHcdYnEekOkj7G6am00001C1hlV70kViiu521R2rWg431h41iifJ00902FdtnmBdxBE1GWNy2_skmBs-kQteCXAxz12YjAefKPm2mV__________3yBshDDTDth5g0F5Zm_Dkmjd50VEjpZxvmZJ0Uu1s_mX9vWnoxPx0T-53V2W040OwWNbaF8hxOCeyPHY4VNHscxMVCS2zjshfhXLk5Nta1WL-A2WJWBxclEFU2e0?test-tag=76416262602753&amp;stat-id=5&amp;">Адрес&nbsp;и&nbsp;телефон</a></yatag><yatag class="yap-contacts__item"><yatag class="yap-contacts__item-text yap-domain-text">Москва</yatag></yatag></yatag></yatag></yatag><yatag class="yap-layout__adtune"><yatag class="yap-adtune yap-adtune_touch_false yap-adtune_oldie_false"><yatag class="yap-adtune__button"><yatag class="yap-adtune-icon yap-adtune-icon_touch_false yap-adtune-icon_size_m yap-adtune-icon_fallback_false"><yatag class="yap-adtune-icon__container"><yatag class="yap-adtune-icon__image" style="width: 8px !important; height: 8px !important;"><svg width="8px" height="8px" viewBox="0 0 14 14" version="1.1"><polygon points="14,0.7 13.3,0 7,6.299 0.7,0 0,0.7 6.3,7 0,13.299 0.7,14 7,7.7 13.3,14 14,13.299 7.7,7"></polygon></svg></yatag><yatag class="yap-adtune-icon__tooltip"><yatag class="yap-adtune-icon__tooltip-arrow"></yatag><yatag class="yap-adtune-icon__tooltip-text">Скрыть&nbsp;объявление</yatag></yatag></yatag></yatag></yatag></yatag></yatag></yatag><yatag class="yap-layout__adtune-message"></yatag></yatag></td></tr></tbody></table></yatag></yatag></yatag></div>
+</div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+  if (window.matchMedia("only screen and (max-width: 991px)").matches) {
+    var m= "R-A-161442-1";
+  } else {
+    var m= "R-A-161442-5";
+  }
+  w[n] = w[n] || [];
+  w[n].push(function() {
+    Ya.Context.AdvManager.render({
+      blockId: m,
+      renderTo: "yandex_ad_v",
+      async: true
+    });
+  });
+  t = d.getElementsByTagName("script")[0];
+  s = d.createElement("script");
+  s.type = "text/javascript";
+  s.src = "//an.yandex.ru/system/context.js";
+  s.async = true;
+  t.parentNode.insertBefore(s, t);
+})(this, this.document, "yandexContextAsyncCallbacks");
+</script>
+        </aside>
+      </div>
+    </div>

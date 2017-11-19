@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "duration": 0,
+      "node": "Число отделений банка",
+      "order": null,
+      "value": 13000
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{% extends 'import.html'%}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ну поехали</title>
+</head>
+<body class="body">
+<style>
+.body{
+    background-image:url({%static 'images/bg-light-4858.png' %});
+   }
+</style>
+
+  <nav class="navbar navbar-expand-lg navbar-light verh">
+
+  <a class="mephi1" href="#"><img src={%static 'images/mifi_new.png' %} height="60" width ="60"> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav vib1">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Игра </span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link test" href="#">Помощь </span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link test1" href="#">Чечня</span></a>
+      </li>
+      <li class="nav-item active">
+          <a class="nav-link test2" href="#">Выход</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="levo">
+  <text class="text1">Отделы</text>
+
+  <a href="#" class="button9" id="men">Менеджмент</a>
+  <a href="#" class="button9" id="mar"> Маркетинг</a>
+  <a href="#" class="button9" id="log">Логистика</a>
+
+</div>
+
+
+
+<div class="pravo">
+  <text class="text1">Внешние показатели</text>
+<a href="#" class="button7">Конец хода</a>
+
+  <a class="makro" href="#"><img src={%static 'images/hd-blue-globe-icon-design.jpg' %} height="60" width ="60"> </a>
+    <a class="mikro" href="#"><img src={%static 'images/34696_business_400x400.png' %} height="70" width ="70"> </a>
+
+</div>
+
+<div class="meneds">
+  <text class="text2">Ключевые показатели отдела менеджмента</text>
+
+   <table class="bordered">
+     <thead>
+        <tr>
+            <th>№</th>
+            <th>Наименование</th>
+            <th>Значение</th>
+        </tr>
+    </thead>
+    </table>
+{% for manag_item in manag %}
+    <table class="bordered">
+    <tr>
+      <td>{{ manag_item.id_node }}</td>
+      <td>{{ manag_item.name }}</td>
+      <td>{{ manag_item.value }}</td>
+    </tr>
+  </table>
+{% endfor %}
+
+  <img class="tetki" src={%static 'images/e97c2efab0.gif' %}>
+
+</div>
+
+
+<a href="#" class="button13" id="zam1">Cотрудников изменить на:</a>
+<a href="#" class="button13" id="zam2">Зарплату изменить на:</a>
+
+<style>
+  a.button13 {
+  display: inline-block;
+  width: 15em;
+  font-size: 80%;
+  color: rgba(255,255,255,.9);
+  text-shadow: #2e7ebd 0 1px 2px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.1;
+  white-space: pre-line;
+  padding: .7em 0;
+  border: 1px solid;
+  border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
+  border-radius: 6px;
+  outline: none;
+  background: #60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);
+  box-shadow: inset rgba(255,255,255,.5) 1px 1px;
+}
+a.button13:first-line{
+  font-size: 170%;
+  font-weight: 700;
+}
+a.button13:hover {
+  color: rgb(255,255,255);
+  background-image: linear-gradient(#9dc7e7, #74afdd 50%, #378bce);
+}
+a.button13:active {
+  color: rgb(255,255,255);
+  border-color: #2970a9;
+  background-image: linear-gradient(#5796c8, #6aa2ce);
+  box-shadow: none;
+}
+
+#zam1{
+  position:fixed;
+  top:750px;
+  left:650px;
+}
+#zam2{
+  position:fixed;
+  top:750px;
+  left:1010px;
+}
+</style>
+
+
+</body>
+{% endblock %}
+</html>

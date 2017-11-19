@@ -1,0 +1,66 @@
+{
+  "changes": [
+    {
+      "duration": 0,
+      "node": "Ставка ЦБ РФ",
+      "order": "1",
+      "value": 8.0
+    },
+    {
+      "duration": 0,
+      "node": "Уровень инфляции",
+      "order": "1",
+      "value": 9.0
+    },
+    {
+      "duration": 0,
+      "node": "Норма обязательных резервов",
+      "order": "2",
+      "value": 6.5
+    },
+    {
+      "duration": 0,
+      "node": "Число банков-конкурентов в России",
+      "order": "1",
+      "value": 0
+    }
+  ],
+  "reactions": [
+    {
+      "duration": 0,
+      "node": "Число сотрудников банка",
+      "order": null,
+      "value": 315000
+    },
+    {
+      "duration": 0,
+      "node": "Средняя ставка по кредитам",
+      "order": null,
+      "value": 12
+    },
+    {
+      "duration": 0,
+      "node": "Число отделений банка",
+      "order": null,
+      "value": 13000
+    },
+    {
+      "duration": 0,
+      "node": "Количество клиентов",
+      "order": null,
+      "value": 130000000
+    },
+    {
+      "duration": 0,
+      "node": "Степень автоматизации процессов",
+      "order": null,
+      "value": 75
+    },
+    {
+      "duration": 0,
+      "node": "Средняя ставка по депозитам",
+      "order": null,
+      "value": 9
+    }
+  ]
+}
